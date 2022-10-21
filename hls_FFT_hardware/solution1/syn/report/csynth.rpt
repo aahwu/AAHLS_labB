@@ -1,0 +1,436 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fft'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 21 22:26:00 2022
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        hls_FFT_hardware
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+    |             Modules            | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |          |            |             |     |
+    |             & Loops            | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |    DSP   |     FF     |     LUT     | URAM|
+    +--------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+    |+ fft                           |     -|  0.04|        -|          -|         -|        -|     -|        no|  156 (55%)|  72 (32%)|  10058 (9%)|  19487 (36%)|    -|
+    | + fft_Pipeline_Reverse         |     -|  2.22|      515|  5.150e+03|         -|      515|     -|        no|          -|         -|   164 (~0%)|    138 (~0%)|    -|
+    |  o Reverse                     |     -|  7.30|      513|  5.130e+03|         3|        1|   512|       yes|          -|         -|           -|            -|    -|
+    | + fft_Pipeline_DFTpts          |     -|  0.04|      273|  2.730e+03|         -|      273|     -|        no|          -|         -|   1140 (1%)|    210 (~0%)|    -|
+    |  o DFTpts                      |     -|  7.30|      271|  2.710e+03|        17|        1|   256|       yes|          -|         -|           -|            -|    -|
+    | + fft_stages                   |     -|  0.04|        -|          -|         -|        -|     -|        no|    2 (~0%)|  24 (10%)|   2865 (2%)|    4349 (8%)|    -|
+    |  + fft_stages_Pipeline_DFTpts  |     -|  0.04|        -|          -|         -|        -|     -|        no|    2 (~0%)|  24 (10%)|   2826 (2%)|    4242 (7%)|    -|
+    |   o DFTpts                     |     -|  7.30|        -|          -|        19|        1|     -|       yes|          -|         -|           -|            -|    -|
+    | + fft_Pipeline_butterfly       |     -|  0.04|      273|  2.730e+03|         -|      273|     -|        no|          -|   12 (5%)|   2831 (2%)|    1761 (3%)|    -|
+    |  o butterfly                   |     -|  7.30|      271|  2.710e+03|        17|        1|   256|       yes|          -|         -|           -|            -|    -|
+    +--------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------------+----------+
+| Interface        | Bitwidth |
++------------------+----------+
+| OUT_I_0_address0 | 8        |
+| OUT_I_0_address1 | 8        |
+| OUT_I_0_d0       | 32       |
+| OUT_I_0_d1       | 32       |
+| OUT_I_1_address0 | 8        |
+| OUT_I_1_address1 | 8        |
+| OUT_I_1_d0       | 32       |
+| OUT_I_1_d1       | 32       |
+| OUT_I_2_address0 | 8        |
+| OUT_I_2_address1 | 8        |
+| OUT_I_2_d0       | 32       |
+| OUT_I_2_d1       | 32       |
+| OUT_I_3_address0 | 8        |
+| OUT_I_3_address1 | 8        |
+| OUT_I_3_d0       | 32       |
+| OUT_I_3_d1       | 32       |
+| OUT_R_0_address0 | 8        |
+| OUT_R_0_address1 | 8        |
+| OUT_R_0_d0       | 32       |
+| OUT_R_0_d1       | 32       |
+| OUT_R_1_address0 | 8        |
+| OUT_R_1_address1 | 8        |
+| OUT_R_1_d0       | 32       |
+| OUT_R_1_d1       | 32       |
+| OUT_R_2_address0 | 8        |
+| OUT_R_2_address1 | 8        |
+| OUT_R_2_d0       | 32       |
+| OUT_R_2_d1       | 32       |
+| OUT_R_3_address0 | 8        |
+| OUT_R_3_address1 | 8        |
+| OUT_R_3_d0       | 32       |
+| OUT_R_3_d1       | 32       |
+| X_I_0_address0   | 8        |
+| X_I_0_address1   | 8        |
+| X_I_0_q0         | 32       |
+| X_I_0_q1         | 32       |
+| X_I_1_address0   | 8        |
+| X_I_1_address1   | 8        |
+| X_I_1_q0         | 32       |
+| X_I_1_q1         | 32       |
+| X_I_2_address0   | 8        |
+| X_I_2_address1   | 8        |
+| X_I_2_q0         | 32       |
+| X_I_2_q1         | 32       |
+| X_I_3_address0   | 8        |
+| X_I_3_address1   | 8        |
+| X_I_3_q0         | 32       |
+| X_I_3_q1         | 32       |
+| X_R_0_address0   | 8        |
+| X_R_0_address1   | 8        |
+| X_R_0_q0         | 32       |
+| X_R_0_q1         | 32       |
+| X_R_1_address0   | 8        |
+| X_R_1_address1   | 8        |
+| X_R_1_q0         | 32       |
+| X_R_1_q1         | 32       |
+| X_R_2_address0   | 8        |
+| X_R_2_address1   | 8        |
+| X_R_2_q0         | 32       |
+| X_R_2_q1         | 32       |
+| X_R_3_address0   | 8        |
+| X_R_3_address1   | 8        |
+| X_R_3_q0         | 32       |
+| X_R_3_q1         | 32       |
++------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| X_R      | in        | float*   |
+| X_I      | in        | float*   |
+| OUT_R    | out       | float*   |
+| OUT_I    | out       | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+------------------+---------+----------+
+| Argument | HW Interface     | HW Type | HW Usage |
++----------+------------------+---------+----------+
+| X_R      | X_R_0_address0   | port    | offset   |
+| X_R      | X_R_0_ce0        | port    |          |
+| X_R      | X_R_0_q0         | port    |          |
+| X_R      | X_R_0_address1   | port    | offset   |
+| X_R      | X_R_0_ce1        | port    |          |
+| X_R      | X_R_0_q1         | port    |          |
+| X_R      | X_R_1_address0   | port    | offset   |
+| X_R      | X_R_1_ce0        | port    |          |
+| X_R      | X_R_1_q0         | port    |          |
+| X_R      | X_R_1_address1   | port    | offset   |
+| X_R      | X_R_1_ce1        | port    |          |
+| X_R      | X_R_1_q1         | port    |          |
+| X_R      | X_R_2_address0   | port    | offset   |
+| X_R      | X_R_2_ce0        | port    |          |
+| X_R      | X_R_2_q0         | port    |          |
+| X_R      | X_R_2_address1   | port    | offset   |
+| X_R      | X_R_2_ce1        | port    |          |
+| X_R      | X_R_2_q1         | port    |          |
+| X_R      | X_R_3_address0   | port    | offset   |
+| X_R      | X_R_3_ce0        | port    |          |
+| X_R      | X_R_3_q0         | port    |          |
+| X_R      | X_R_3_address1   | port    | offset   |
+| X_R      | X_R_3_ce1        | port    |          |
+| X_R      | X_R_3_q1         | port    |          |
+| X_I      | X_I_0_address0   | port    | offset   |
+| X_I      | X_I_0_ce0        | port    |          |
+| X_I      | X_I_0_q0         | port    |          |
+| X_I      | X_I_0_address1   | port    | offset   |
+| X_I      | X_I_0_ce1        | port    |          |
+| X_I      | X_I_0_q1         | port    |          |
+| X_I      | X_I_1_address0   | port    | offset   |
+| X_I      | X_I_1_ce0        | port    |          |
+| X_I      | X_I_1_q0         | port    |          |
+| X_I      | X_I_1_address1   | port    | offset   |
+| X_I      | X_I_1_ce1        | port    |          |
+| X_I      | X_I_1_q1         | port    |          |
+| X_I      | X_I_2_address0   | port    | offset   |
+| X_I      | X_I_2_ce0        | port    |          |
+| X_I      | X_I_2_q0         | port    |          |
+| X_I      | X_I_2_address1   | port    | offset   |
+| X_I      | X_I_2_ce1        | port    |          |
+| X_I      | X_I_2_q1         | port    |          |
+| X_I      | X_I_3_address0   | port    | offset   |
+| X_I      | X_I_3_ce0        | port    |          |
+| X_I      | X_I_3_q0         | port    |          |
+| X_I      | X_I_3_address1   | port    | offset   |
+| X_I      | X_I_3_ce1        | port    |          |
+| X_I      | X_I_3_q1         | port    |          |
+| OUT_R    | OUT_R_0_address0 | port    | offset   |
+| OUT_R    | OUT_R_0_ce0      | port    |          |
+| OUT_R    | OUT_R_0_we0      | port    |          |
+| OUT_R    | OUT_R_0_d0       | port    |          |
+| OUT_R    | OUT_R_0_address1 | port    | offset   |
+| OUT_R    | OUT_R_0_ce1      | port    |          |
+| OUT_R    | OUT_R_0_we1      | port    |          |
+| OUT_R    | OUT_R_0_d1       | port    |          |
+| OUT_R    | OUT_R_1_address0 | port    | offset   |
+| OUT_R    | OUT_R_1_ce0      | port    |          |
+| OUT_R    | OUT_R_1_we0      | port    |          |
+| OUT_R    | OUT_R_1_d0       | port    |          |
+| OUT_R    | OUT_R_1_address1 | port    | offset   |
+| OUT_R    | OUT_R_1_ce1      | port    |          |
+| OUT_R    | OUT_R_1_we1      | port    |          |
+| OUT_R    | OUT_R_1_d1       | port    |          |
+| OUT_R    | OUT_R_2_address0 | port    | offset   |
+| OUT_R    | OUT_R_2_ce0      | port    |          |
+| OUT_R    | OUT_R_2_we0      | port    |          |
+| OUT_R    | OUT_R_2_d0       | port    |          |
+| OUT_R    | OUT_R_2_address1 | port    | offset   |
+| OUT_R    | OUT_R_2_ce1      | port    |          |
+| OUT_R    | OUT_R_2_we1      | port    |          |
+| OUT_R    | OUT_R_2_d1       | port    |          |
+| OUT_R    | OUT_R_3_address0 | port    | offset   |
+| OUT_R    | OUT_R_3_ce0      | port    |          |
+| OUT_R    | OUT_R_3_we0      | port    |          |
+| OUT_R    | OUT_R_3_d0       | port    |          |
+| OUT_R    | OUT_R_3_address1 | port    | offset   |
+| OUT_R    | OUT_R_3_ce1      | port    |          |
+| OUT_R    | OUT_R_3_we1      | port    |          |
+| OUT_R    | OUT_R_3_d1       | port    |          |
+| OUT_I    | OUT_I_0_address0 | port    | offset   |
+| OUT_I    | OUT_I_0_ce0      | port    |          |
+| OUT_I    | OUT_I_0_we0      | port    |          |
+| OUT_I    | OUT_I_0_d0       | port    |          |
+| OUT_I    | OUT_I_0_address1 | port    | offset   |
+| OUT_I    | OUT_I_0_ce1      | port    |          |
+| OUT_I    | OUT_I_0_we1      | port    |          |
+| OUT_I    | OUT_I_0_d1       | port    |          |
+| OUT_I    | OUT_I_1_address0 | port    | offset   |
+| OUT_I    | OUT_I_1_ce0      | port    |          |
+| OUT_I    | OUT_I_1_we0      | port    |          |
+| OUT_I    | OUT_I_1_d0       | port    |          |
+| OUT_I    | OUT_I_1_address1 | port    | offset   |
+| OUT_I    | OUT_I_1_ce1      | port    |          |
+| OUT_I    | OUT_I_1_we1      | port    |          |
+| OUT_I    | OUT_I_1_d1       | port    |          |
+| OUT_I    | OUT_I_2_address0 | port    | offset   |
+| OUT_I    | OUT_I_2_ce0      | port    |          |
+| OUT_I    | OUT_I_2_we0      | port    |          |
+| OUT_I    | OUT_I_2_d0       | port    |          |
+| OUT_I    | OUT_I_2_address1 | port    | offset   |
+| OUT_I    | OUT_I_2_ce1      | port    |          |
+| OUT_I    | OUT_I_2_we1      | port    |          |
+| OUT_I    | OUT_I_2_d1       | port    |          |
+| OUT_I    | OUT_I_3_address0 | port    | offset   |
+| OUT_I    | OUT_I_3_ce0      | port    |          |
+| OUT_I    | OUT_I_3_we0      | port    |          |
+| OUT_I    | OUT_I_3_d0       | port    |          |
+| OUT_I    | OUT_I_3_address1 | port    | offset   |
+| OUT_I    | OUT_I_3_ce1      | port    |          |
+| OUT_I    | OUT_I_3_we1      | port    |          |
+| OUT_I    | OUT_I_3_d1       | port    |          |
++----------+------------------+---------+----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------+-----+--------+-----------+------+---------+---------+
+| Name                                   | DSP | Pragma | Variable  | Op   | Impl    | Latency |
++----------------------------------------+-----+--------+-----------+------+---------+---------+
+| + fft                                  | 72  |        |           |      |         |         |
+|  + fft_Pipeline_Reverse                | 0   |        |           |      |         |         |
+|    add_ln107_fu_484_p2                 | -   |        | add_ln107 | add  | fabric  | 0       |
+|  + fft_Pipeline_DFTpts                 | 0   |        |           |      |         |         |
+|    add_ln134_fu_382_p2                 | -   |        | add_ln134 | add  | fabric  | 0       |
+|  + fft_stages                          | 24  |        |           |      |         |         |
+|    one_V_fu_143_p2                     | -   |        | one_V     | add  | fabric  | 0       |
+|    sub3_fu_149_p2                      | -   |        | sub3      | add  | fabric  | 0       |
+|    sub5_fu_155_p2                      | -   |        | sub5      | add  | fabric  | 0       |
+|   + fft_stages_Pipeline_DFTpts         | 24  |        |           |      |         |         |
+|     mul_9s_9s_9_1_1_U64                | -   |        | ret_V     | mul  | auto    | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U60  | 3   |        | mul       | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U61  | 3   |        | mul1      | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U54 | 2   |        | temp_R    | fsub | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U62  | 3   |        | mul2      | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U63  | 3   |        | mul3      | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U55 | 2   |        | temp_I    | fadd | fulldsp | 4       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U56 | 2   |        | sub       | fsub | fulldsp | 4       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U57 | 2   |        | sub1      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U58 | 2   |        | add       | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U59 | 2   |        | add1      | fadd | fulldsp | 4       |
+|     add_ln184_fu_666_p2                | -   |        | add_ln184 | add  | fabric  | 0       |
+|     i_2_fu_715_p2                      | -   |        | i_2       | add  | fabric  | 0       |
+|  + fft_Pipeline_butterfly              | 12  |        |           |      |         |         |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U126  | 3   |        | mul_1_i   | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U127  | 3   |        | mul7_1_i  | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U128  | 3   |        | mul10_1_i | fmul | maxdsp  | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U129  | 3   |        | mul13_1_i | fmul | maxdsp  | 3       |
+|    add_ln219_fu_789_p2                 | -   |        | add_ln219 | add  | fabric  | 0       |
+|    add_ln205_fu_795_p2                 | -   |        | add_ln205 | add  | fabric  | 0       |
++----------------------------------------+-----+--------+-----------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++---------------------------------------+------+------+--------+------------+---------+------+---------+
+| Name                                  | BRAM | URAM | Pragma | Variable   | Storage | Impl | Latency |
++---------------------------------------+------+------+--------+------------+---------+------+---------+
+| + fft                                 | 156  | 0    |        |            |         |      |         |
+|   Stage0_R_U                          | 2    | -    |        | Stage0_R   | ram_1p  | auto | 1       |
+|   Stage0_R_1_U                        | 2    | -    |        | Stage0_R_1 | ram_1p  | auto | 1       |
+|   Stage0_R_2_U                        | 2    | -    |        | Stage0_R_2 | ram_1p  | auto | 1       |
+|   Stage0_R_3_U                        | 2    | -    |        | Stage0_R_3 | ram_1p  | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U169  | 2    | -    |        | Stage0_I   | ram_1p  | auto | 1       |
+|   Stage0_I_1_U                        | 2    | -    |        | Stage0_I_1 | ram_1p  | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U171  | 2    | -    |        | Stage0_I_2 | ram_1p  | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U159 | 2    | -    |        | Stage0_I_3 | ram_1p  | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U172  | 2    | -    |        | Stage1_R   | ram_s2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U160 | 2    | -    |        | Stage1_R_1 | ram_s2p | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U170  | 2    | -    |        | Stage1_R_2 | ram_s2p | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U157 | 2    | -    |        | Stage1_R_3 | ram_s2p | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U171  | 2    | -    |        | Stage1_I   | ram_s2p | auto | 1       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U172  | 2    | -    |        | Stage1_I_1 | ram_s2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U158 | 2    | -    |        | Stage1_I_2 | ram_s2p | auto | 1       |
+|   Stage1_I_3_U                        | 2    | -    |        | Stage1_I_3 | ram_s2p | auto | 1       |
+|   Stage2_R_U                          | 2    | -    |        | Stage2_R   | ram_t2p | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U166 | 2    | -    |        | Stage2_R_1 | ram_t2p | auto | 1       |
+|   Stage2_R_2_U                        | 2    | -    |        | Stage2_R_2 | ram_t2p | auto | 1       |
+|   Stage2_R_3_U                        | 2    | -    |        | Stage2_R_3 | ram_t2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U167 | 2    | -    |        | Stage2_I   | ram_t2p | auto | 1       |
+|   Stage2_I_1_U                        | 2    | -    |        | Stage2_I_1 | ram_t2p | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U161 | 2    | -    |        | Stage2_I_2 | ram_t2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U168 | 2    | -    |        | Stage2_I_3 | ram_t2p | auto | 1       |
+|   Stage3_R_U                          | 2    | -    |        | Stage3_R   | ram_t2p | auto | 1       |
+|   Stage3_R_1_U                        | 2    | -    |        | Stage3_R_1 | ram_t2p | auto | 1       |
+|   Stage3_R_2_U                        | 2    | -    |        | Stage3_R_2 | ram_t2p | auto | 1       |
+|   Stage3_R_3_U                        | 2    | -    |        | Stage3_R_3 | ram_t2p | auto | 1       |
+|   Stage3_I_U                          | 2    | -    |        | Stage3_I   | ram_t2p | auto | 1       |
+|   Stage3_I_1_U                        | 2    | -    |        | Stage3_I_1 | ram_t2p | auto | 1       |
+|   Stage3_I_2_U                        | 2    | -    |        | Stage3_I_2 | ram_t2p | auto | 1       |
+|   Stage3_I_3_U                        | 2    | -    |        | Stage3_I_3 | ram_t2p | auto | 1       |
+|   Stage4_R_U                          | 2    | -    |        | Stage4_R   | ram_t2p | auto | 1       |
+|   Stage4_R_1_U                        | 2    | -    |        | Stage4_R_1 | ram_t2p | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U162 | 2    | -    |        | Stage4_R_2 | ram_t2p | auto | 1       |
+|   Stage4_R_3_U                        | 2    | -    |        | Stage4_R_3 | ram_t2p | auto | 1       |
+|   Stage4_I_U                          | 2    | -    |        | Stage4_I   | ram_t2p | auto | 1       |
+|   Stage4_I_1_U                        | 2    | -    |        | Stage4_I_1 | ram_t2p | auto | 1       |
+|   Stage4_I_2_U                        | 2    | -    |        | Stage4_I_2 | ram_t2p | auto | 1       |
+|   Stage4_I_3_U                        | 2    | -    |        | Stage4_I_3 | ram_t2p | auto | 1       |
+|   Stage5_R_U                          | 2    | -    |        | Stage5_R   | ram_t2p | auto | 1       |
+|   Stage5_R_1_U                        | 2    | -    |        | Stage5_R_1 | ram_t2p | auto | 1       |
+|   Stage5_R_2_U                        | 2    | -    |        | Stage5_R_2 | ram_t2p | auto | 1       |
+|   Stage5_R_3_U                        | 2    | -    |        | Stage5_R_3 | ram_t2p | auto | 1       |
+|   Stage5_I_U                          | 2    | -    |        | Stage5_I   | ram_t2p | auto | 1       |
+|   fsub_32ns_32ns_32_5_full_dsp_1_U162 | 2    | -    |        | Stage5_I_1 | ram_t2p | auto | 1       |
+|   Stage5_I_2_U                        | 2    | -    |        | Stage5_I_2 | ram_t2p | auto | 1       |
+|   Stage5_I_3_U                        | 2    | -    |        | Stage5_I_3 | ram_t2p | auto | 1       |
+|   Stage6_R_U                          | 2    | -    |        | Stage6_R   | ram_t2p | auto | 1       |
+|   Stage6_R_1_U                        | 2    | -    |        | Stage6_R_1 | ram_t2p | auto | 1       |
+|   Stage6_R_2_U                        | 2    | -    |        | Stage6_R_2 | ram_t2p | auto | 1       |
+|   Stage6_R_3_U                        | 2    | -    |        | Stage6_R_3 | ram_t2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U163 | 2    | -    |        | Stage6_I   | ram_t2p | auto | 1       |
+|   Stage6_I_1_U                        | 2    | -    |        | Stage6_I_1 | ram_t2p | auto | 1       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U164 | 2    | -    |        | Stage6_I_2 | ram_t2p | auto | 1       |
+|   Stage6_I_3_U                        | 2    | -    |        | Stage6_I_3 | ram_t2p | auto | 1       |
+|   Stage7_R_U                          | 2    | -    |        | Stage7_R   | ram_t2p | auto | 1       |
+|   Stage7_R_1_U                        | 2    | -    |        | Stage7_R_1 | ram_t2p | auto | 1       |
+|   Stage7_R_2_U                        | 2    | -    |        | Stage7_R_2 | ram_t2p | auto | 1       |
+|   Stage7_R_3_U                        | 2    | -    |        | Stage7_R_3 | ram_t2p | auto | 1       |
+|   Stage7_I_U                          | 2    | -    |        | Stage7_I   | ram_t2p | auto | 1       |
+|   Stage7_I_1_U                        | 2    | -    |        | Stage7_I_1 | ram_t2p | auto | 1       |
+|   Stage7_I_2_U                        | 2    | -    |        | Stage7_I_2 | ram_t2p | auto | 1       |
+|   Stage7_I_3_U                        | 2    | -    |        | Stage7_I_3 | ram_t2p | auto | 1       |
+|   Stage8_R_U                          | 2    | -    |        | Stage8_R   | ram_t2p | auto | 1       |
+|   Stage8_R_1_U                        | 2    | -    |        | Stage8_R_1 | ram_t2p | auto | 1       |
+|   Stage8_R_2_U                        | 2    | -    |        | Stage8_R_2 | ram_t2p | auto | 1       |
+|   Stage8_R_3_U                        | 2    | -    |        | Stage8_R_3 | ram_t2p | auto | 1       |
+|   Stage8_I_U                          | 2    | -    |        | Stage8_I   | ram_t2p | auto | 1       |
+|   Stage8_I_1_U                        | 2    | -    |        | Stage8_I_1 | ram_t2p | auto | 1       |
+|   Stage8_I_2_U                        | 2    | -    |        | Stage8_I_2 | ram_t2p | auto | 1       |
+|   Stage8_I_3_U                        | 2    | -    |        | Stage8_I_3 | ram_t2p | auto | 1       |
+|   Stage9_R_0_U                        | 2    | -    |        | Stage9_R_0 | ram_t2p | auto | 1       |
+|   Stage9_R_1_U                        | 2    | -    |        | Stage9_R_1 | ram_t2p | auto | 1       |
+|   Stage9_R_2_U                        | 2    | -    |        | Stage9_R_2 | ram_t2p | auto | 1       |
+|   Stage9_R_3_U                        | 2    | -    |        | Stage9_R_3 | ram_t2p | auto | 1       |
+|   Stage9_I_0_U                        | 2    | -    |        | Stage9_I_0 | ram_t2p | auto | 1       |
+|   Stage9_I_1_U                        | 2    | -    |        | Stage9_I_1 | ram_t2p | auto | 1       |
+|   Stage9_I_2_U                        | 2    | -    |        | Stage9_I_2 | ram_t2p | auto | 1       |
+|   Stage9_I_3_U                        | 2    | -    |        | Stage9_I_3 | ram_t2p | auto | 1       |
+|   W_real_U                            | 1    | -    |        | W_real     | rom_2p  | auto | 1       |
+|   W_imag_U                            | 1    | -    |        | W_imag     | rom_2p  | auto | 1       |
+|  + fft_stages                         | 2    | 0    |        |            |         |      |         |
+|   + fft_stages_Pipeline_DFTpts        | 2    | 0    |        |            |         |      |         |
+|     W_real_U                          | 1    | -    |        | W_real     | rom_1p  | auto | 1       |
+|     W_imag_U                          | 1    | -    |        | W_imag     | rom_1p  | auto | 1       |
++---------------------------------------+------+------+--------+------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------------------+------------------------------------------------------------------------------+
+| Type            | Options                                      | Location                                                                     |
++-----------------+----------------------------------------------+------------------------------------------------------------------------------+
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage9_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:63 in fft, Stage9_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage9_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:64 in fft, Stage9_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage8_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:65 in fft, Stage8_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage8_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:66 in fft, Stage8_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage7_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:67 in fft, Stage7_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage7_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:68 in fft, Stage7_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage6_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:69 in fft, Stage6_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage6_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:70 in fft, Stage6_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage5_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:71 in fft, Stage5_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage5_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:72 in fft, Stage5_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage4_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:73 in fft, Stage4_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage4_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:74 in fft, Stage4_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage3_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:75 in fft, Stage3_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage3_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:76 in fft, Stage3_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage2_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:77 in fft, Stage2_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage2_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:78 in fft, Stage2_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage1_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:79 in fft, Stage1_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage1_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:80 in fft, Stage1_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage0_R | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:81 in fft, Stage0_R           |
+| array_partition | dim=1 type=cyclic factor=4 variable=Stage0_I | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:82 in fft, Stage0_I           |
+| array_partition | dim=1 type=cyclic factor=4 variable=OUT_R    | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:83 in fft, OUT_R              |
+| array_partition | dim=1 type=cyclic factor=4 variable=OUT_I    | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:84 in fft, OUT_I              |
+| array_partition | dim=1 type=cyclic factor=4 variable=X_I      | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:85 in fft, X_I                |
+| array_partition | dim=1 type=cyclic factor=4 variable=X_R      | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:86 in fft, X_R                |
+| dependence      | variable=OUT_I intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:132 in fft_stage_first, OUT_I |
+| dependence      | variable=OUT_R intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:133 in fft_stage_first, OUT_R |
+| dependence      | variable=OUT_I intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:165 in fft_stages, OUT_I      |
+| dependence      | variable=OUT_R intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:166 in fft_stages, OUT_R      |
+| dependence      | variable=OUT_I inter WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:167 in fft_stages, OUT_I      |
+| dependence      | variable=OUT_R inter WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:168 in fft_stages, OUT_R      |
+| dependence      | variable=OUT_I intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:203 in fft_stage_last, OUT_I  |
+| dependence      | variable=OUT_R intra WAW false               | ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:204 in fft_stage_last, OUT_R  |
+| unroll          | skip_exit_check factor=2                     | hls_FFT_hardware/solution1/directives.tcl:10 in bit_reverse                  |
+| unroll          | factor=2                                     | hls_FFT_hardware/solution1/directives.tcl:7 in fft_stage_first               |
+| unroll          | skip_exit_check factor=2                     | hls_FFT_hardware/solution1/directives.tcl:9 in fft_stage_last                |
++-----------------+----------------------------------------------+------------------------------------------------------------------------------+
+
+

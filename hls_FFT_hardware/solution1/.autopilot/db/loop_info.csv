@@ -1,0 +1,4 @@
+grp_fft_Pipeline_Reverse_fu_398,Reverse,upc_loop_status1.csv
+grp_fft_Pipeline_DFTpts_fu_434,DFTpts,upc_loop_status2.csv
+grp_fft_stages_fu_454.grp_fft_stages_Pipeline_DFTpts_fu_64,DFTpts,upc_loop_status3.csv
+grp_fft_Pipeline_butterfly_fu_487,butterfly,upc_loop_status4.csv

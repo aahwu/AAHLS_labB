@@ -1,0 +1,448 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_stages_Pipeline_DFTpts'
+================================================================
+* Date:           Fri Oct 21 22:25:55 2022
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        hls_FFT_hardware
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- DFTpts  |        ?|        ?|        19|          1|          1|     ?|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 19
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 19, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.41>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_Val2_s = alloca i32 1"   --->   Operation 22 'alloca' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %trunc_ln"   --->   Operation 23 'read' 'trunc_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%sub5_cast_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %sub5_cast"   --->   Operation 24 'read' 'sub5_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%sub3_cast_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %sub3_cast"   --->   Operation 25 'read' 'sub3_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln157_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %zext_ln157"   --->   Operation 26 'read' 'zext_ln157_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln160_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %zext_ln160"   --->   Operation 27 'read' 'zext_ln160_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%sub3_cast_cast = zext i4 %sub3_cast_read"   --->   Operation 28 'zext' 'sub3_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln157_cast = zext i9 %zext_ln157_read"   --->   Operation 29 'zext' 'zext_ln157_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln160_cast = zext i9 %zext_ln160_read"   --->   Operation 30 'zext' 'zext_ln160_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.58ns)   --->   "%store_ln0 = store i32 0, i32 %p_Val2_s"   --->   Operation 31 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.cond"   --->   Operation 32 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%i_3 = load i32 %p_Val2_s"   --->   Operation 33 'load' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 34 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i22 @_ssdm_op_PartSelect.i22.i32.i32.i32, i32 %i_3, i32 10, i32 31" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 35 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (2.44ns)   --->   "%icmp_ln169 = icmp_slt  i22 %tmp_4, i22 1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 36 'icmp' 'icmp_ln169' <Predicate = true> <Delay = 2.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln169 = br i1 %icmp_ln169, void %for.end.exitStub, void %for.body" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 37 'br' 'br_ln169' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node lhs)   --->   "%zext_ln674 = zext i4 %sub5_cast_read"   --->   Operation 38 'zext' 'zext_ln674' <Predicate = (icmp_ln169)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node lhs)   --->   "%xor_ln674 = xor i6 %zext_ln674, i6 31"   --->   Operation 39 'xor' 'xor_ln674' <Predicate = (icmp_ln169)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node lhs)   --->   "%zext_ln674_1 = zext i6 %xor_ln674"   --->   Operation 40 'zext' 'zext_ln674_1' <Predicate = (icmp_ln169)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node lhs)   --->   "%lshr_ln674 = lshr i32 4294967295, i32 %zext_ln674_1"   --->   Operation 41 'lshr' 'lshr_ln674' <Predicate = (icmp_ln169)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 2.94> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (2.94ns) (out node of the LUT)   --->   "%lhs = and i32 %i_3, i32 %lshr_ln674"   --->   Operation 42 'and' 'lhs' <Predicate = (icmp_ln169)> <Delay = 2.94> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln1540 = trunc i32 %lhs"   --->   Operation 43 'trunc' 'trunc_ln1540' <Predicate = (icmp_ln169)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (2.47ns)   --->   "%icmp_ln1065 = icmp_eq  i32 %lhs, i32 %zext_ln160_cast"   --->   Operation 44 'icmp' 'icmp_ln1065' <Predicate = (icmp_ln169)> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (2.55ns)   --->   "%add_ln184 = add i32 %i_3, i32 %zext_ln157_cast" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:184]   --->   Operation 45 'add' 'add_ln184' <Predicate = (icmp_ln169)> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 4.35>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%empty = trunc i32 %i_3"   --->   Operation 46 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%p_Result_s = bitset i32 @_ssdm_op_BitSet.i32.i32.i32.i1, i32 %i_3, i32 %sub3_cast_cast, i1 1"   --->   Operation 47 'bitset' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln850 = trunc i32 %p_Result_s"   --->   Operation 48 'trunc' 'trunc_ln850' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (4.35ns)   --->   "%ret_V = mul i9 %trunc_ln1540, i9 %trunc_ln_read"   --->   Operation 49 'mul' 'ret_V' <Predicate = true> <Delay = 4.35> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.35> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %p_Result_s, i32 2, i32 9" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 50 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%lshr_ln1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %i_3, i32 2, i32 9" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 51 'partselect' 'lshr_ln1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.95ns)   --->   "%switch_ln179 = switch i2 %trunc_ln850, void %arrayidx3414.case.3, i2 0, void %arrayidx3414.case.0, i2 1, void %arrayidx3414.case.1, i2 2, void %arrayidx3414.case.2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 52 'switch' 'switch_ln179' <Predicate = true> <Delay = 0.95>
+ST_2 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node i_2)   --->   "%i = select i1 %icmp_ln1065, i32 %add_ln184, i32 %i_3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:183]   --->   Operation 53 'select' 'i' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 54 [1/1] (2.55ns) (out node of the LUT)   --->   "%i_2 = add i32 %i, i32 1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 54 'add' 'i_2' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (1.58ns)   --->   "%store_ln169 = store i32 %i_2, i32 %p_Val2_s" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 55 'store' 'store_ln169' <Predicate = true> <Delay = 1.58>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln169 = br void %for.cond" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:169]   --->   Operation 56 'br' 'br_ln169' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln1540 = zext i9 %ret_V"   --->   Operation 57 'zext' 'zext_ln1540' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%W_real_addr = getelementptr i32 %W_real, i64 0, i64 %zext_ln1540" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174]   --->   Operation 58 'getelementptr' 'W_real_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [2/2] (3.25ns)   --->   "%c2 = load i9 %W_real_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174]   --->   Operation 59 'load' 'c2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 512> <ROM>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%W_imag_addr = getelementptr i32 %W_imag, i64 0, i64 %zext_ln1540" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:175]   --->   Operation 60 'getelementptr' 'W_imag_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [2/2] (3.25ns)   --->   "%s2 = load i9 %W_imag_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:175]   --->   Operation 61 'load' 's2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 512> <ROM>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%zext_ln176 = zext i8 %lshr_ln" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 62 'zext' 'zext_ln176' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%X_R_0_addr = getelementptr i32 %X_R_0, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 63 'getelementptr' 'X_R_0_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%X_R_1_addr = getelementptr i32 %X_R_1, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 64 'getelementptr' 'X_R_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%X_R_2_addr = getelementptr i32 %X_R_2, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 65 'getelementptr' 'X_R_2_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%X_R_3_addr = getelementptr i32 %X_R_3, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 66 'getelementptr' 'X_R_3_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [2/2] (3.25ns)   --->   "%X_R_0_load = load i8 %X_R_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 67 'load' 'X_R_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 68 [2/2] (3.25ns)   --->   "%X_R_1_load = load i8 %X_R_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 68 'load' 'X_R_1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 69 [2/2] (3.25ns)   --->   "%X_R_2_load = load i8 %X_R_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 69 'load' 'X_R_2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 70 [2/2] (3.25ns)   --->   "%X_R_3_load = load i8 %X_R_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 70 'load' 'X_R_3_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%X_I_0_addr = getelementptr i32 %X_I_0, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 71 'getelementptr' 'X_I_0_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%X_I_1_addr = getelementptr i32 %X_I_1, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 72 'getelementptr' 'X_I_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%X_I_2_addr = getelementptr i32 %X_I_2, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 73 'getelementptr' 'X_I_2_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%X_I_3_addr = getelementptr i32 %X_I_3, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 74 'getelementptr' 'X_I_3_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 75 [2/2] (3.25ns)   --->   "%X_I_0_load = load i8 %X_I_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 75 'load' 'X_I_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 76 [2/2] (3.25ns)   --->   "%X_I_1_load = load i8 %X_I_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 76 'load' 'X_I_1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 77 [2/2] (3.25ns)   --->   "%X_I_2_load = load i8 %X_I_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 77 'load' 'X_I_2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_3 : Operation 78 [2/2] (3.25ns)   --->   "%X_I_3_load = load i8 %X_I_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 78 'load' 'X_I_3_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 4 <SV = 3> <Delay = 5.08>
+ST_4 : Operation 79 [1/2] (3.25ns)   --->   "%c2 = load i9 %W_real_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174]   --->   Operation 79 'load' 'c2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 512> <ROM>
+ST_4 : Operation 80 [1/2] (3.25ns)   --->   "%s2 = load i9 %W_imag_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:175]   --->   Operation 80 'load' 's2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 32> <Depth = 512> <ROM>
+ST_4 : Operation 81 [1/2] (3.25ns)   --->   "%X_R_0_load = load i8 %X_R_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 81 'load' 'X_R_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 82 [1/2] (3.25ns)   --->   "%X_R_1_load = load i8 %X_R_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 82 'load' 'X_R_1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 83 [1/2] (3.25ns)   --->   "%X_R_2_load = load i8 %X_R_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 83 'load' 'X_R_2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 84 [1/2] (3.25ns)   --->   "%X_R_3_load = load i8 %X_R_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 84 'load' 'X_R_3_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 85 [1/1] (1.82ns)   --->   "%tmp = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 %X_R_0_load, i32 %X_R_1_load, i32 %X_R_2_load, i32 %X_R_3_load, i2 %trunc_ln850" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 85 'mux' 'tmp' <Predicate = true> <Delay = 1.82> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 86 [1/2] (3.25ns)   --->   "%X_I_0_load = load i8 %X_I_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 86 'load' 'X_I_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 87 [1/2] (3.25ns)   --->   "%X_I_1_load = load i8 %X_I_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 87 'load' 'X_I_1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 88 [1/2] (3.25ns)   --->   "%X_I_2_load = load i8 %X_I_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 88 'load' 'X_I_2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 89 [1/2] (3.25ns)   --->   "%X_I_3_load = load i8 %X_I_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 89 'load' 'X_I_3_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_4 : Operation 90 [1/1] (1.82ns)   --->   "%tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 %X_I_0_load, i32 %X_I_1_load, i32 %X_I_2_load, i32 %X_I_3_load, i2 %trunc_ln850" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 90 'mux' 'tmp_1' <Predicate = true> <Delay = 1.82> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.70>
+ST_5 : Operation 91 [4/4] (5.70ns)   --->   "%mul = fmul i32 %tmp, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 91 'fmul' 'mul' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 92 [4/4] (5.70ns)   --->   "%mul1 = fmul i32 %tmp_1, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 92 'fmul' 'mul1' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 93 [4/4] (5.70ns)   --->   "%mul2 = fmul i32 %tmp_1, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 93 'fmul' 'mul2' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 94 [4/4] (5.70ns)   --->   "%mul3 = fmul i32 %tmp, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 94 'fmul' 'mul3' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.70>
+ST_6 : Operation 95 [3/4] (5.70ns)   --->   "%mul = fmul i32 %tmp, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 95 'fmul' 'mul' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 96 [3/4] (5.70ns)   --->   "%mul1 = fmul i32 %tmp_1, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 96 'fmul' 'mul1' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 97 [3/4] (5.70ns)   --->   "%mul2 = fmul i32 %tmp_1, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 97 'fmul' 'mul2' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 98 [3/4] (5.70ns)   --->   "%mul3 = fmul i32 %tmp, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 98 'fmul' 'mul3' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.70>
+ST_7 : Operation 99 [2/4] (5.70ns)   --->   "%mul = fmul i32 %tmp, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 99 'fmul' 'mul' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 100 [2/4] (5.70ns)   --->   "%mul1 = fmul i32 %tmp_1, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 100 'fmul' 'mul1' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 101 [2/4] (5.70ns)   --->   "%mul2 = fmul i32 %tmp_1, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 101 'fmul' 'mul2' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 102 [2/4] (5.70ns)   --->   "%mul3 = fmul i32 %tmp, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 102 'fmul' 'mul3' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.70>
+ST_8 : Operation 103 [1/4] (5.70ns)   --->   "%mul = fmul i32 %tmp, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 103 'fmul' 'mul' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 104 [1/4] (5.70ns)   --->   "%mul1 = fmul i32 %tmp_1, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 104 'fmul' 'mul1' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 105 [1/4] (5.70ns)   --->   "%mul2 = fmul i32 %tmp_1, i32 %c2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 105 'fmul' 'mul2' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 106 [1/4] (5.70ns)   --->   "%mul3 = fmul i32 %tmp, i32 %s2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 106 'fmul' 'mul3' <Predicate = true> <Delay = 5.70> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.25>
+ST_9 : Operation 107 [5/5] (7.25ns)   --->   "%temp_R = fsub i32 %mul, i32 %mul1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 107 'fsub' 'temp_R' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 108 [5/5] (7.25ns)   --->   "%temp_I = fadd i32 %mul2, i32 %mul3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 108 'fadd' 'temp_I' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.25>
+ST_10 : Operation 109 [4/5] (7.25ns)   --->   "%temp_R = fsub i32 %mul, i32 %mul1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 109 'fsub' 'temp_R' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 110 [4/5] (7.25ns)   --->   "%temp_I = fadd i32 %mul2, i32 %mul3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 110 'fadd' 'temp_I' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 7.25>
+ST_11 : Operation 111 [3/5] (7.25ns)   --->   "%temp_R = fsub i32 %mul, i32 %mul1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 111 'fsub' 'temp_R' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 112 [3/5] (7.25ns)   --->   "%temp_I = fadd i32 %mul2, i32 %mul3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 112 'fadd' 'temp_I' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 7.25>
+ST_12 : Operation 113 [2/5] (7.25ns)   --->   "%temp_R = fsub i32 %mul, i32 %mul1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 113 'fsub' 'temp_R' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 114 [2/5] (7.25ns)   --->   "%temp_I = fadd i32 %mul2, i32 %mul3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 114 'fadd' 'temp_I' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 115 [1/1] (0.00ns)   --->   "%zext_ln179 = zext i8 %lshr_ln1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 115 'zext' 'zext_ln179' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 116 [1/1] (0.00ns)   --->   "%X_R_0_addr_1 = getelementptr i32 %X_R_0, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 116 'getelementptr' 'X_R_0_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%X_R_1_addr_1 = getelementptr i32 %X_R_1, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 117 'getelementptr' 'X_R_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 118 [1/1] (0.00ns)   --->   "%X_R_2_addr_1 = getelementptr i32 %X_R_2, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 118 'getelementptr' 'X_R_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%X_R_3_addr_1 = getelementptr i32 %X_R_3, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 119 'getelementptr' 'X_R_3_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 120 [2/2] (3.25ns)   --->   "%X_R_0_load_1 = load i8 %X_R_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 120 'load' 'X_R_0_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 121 [2/2] (3.25ns)   --->   "%X_R_1_load_1 = load i8 %X_R_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 121 'load' 'X_R_1_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 122 [2/2] (3.25ns)   --->   "%X_R_2_load_1 = load i8 %X_R_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 122 'load' 'X_R_2_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 123 [2/2] (3.25ns)   --->   "%X_R_3_load_1 = load i8 %X_R_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 123 'load' 'X_R_3_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 124 [1/1] (0.00ns)   --->   "%X_I_0_addr_1 = getelementptr i32 %X_I_0, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 124 'getelementptr' 'X_I_0_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 125 [1/1] (0.00ns)   --->   "%X_I_1_addr_1 = getelementptr i32 %X_I_1, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 125 'getelementptr' 'X_I_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 126 [1/1] (0.00ns)   --->   "%X_I_2_addr_1 = getelementptr i32 %X_I_2, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 126 'getelementptr' 'X_I_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 127 [1/1] (0.00ns)   --->   "%X_I_3_addr_1 = getelementptr i32 %X_I_3, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 127 'getelementptr' 'X_I_3_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 128 [2/2] (3.25ns)   --->   "%X_I_0_load_1 = load i8 %X_I_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 128 'load' 'X_I_0_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 129 [2/2] (3.25ns)   --->   "%X_I_1_load_1 = load i8 %X_I_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 129 'load' 'X_I_1_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 130 [2/2] (3.25ns)   --->   "%X_I_2_load_1 = load i8 %X_I_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 130 'load' 'X_I_2_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_12 : Operation 131 [2/2] (3.25ns)   --->   "%X_I_3_load_1 = load i8 %X_I_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 131 'load' 'X_I_3_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+
+State 13 <SV = 12> <Delay = 7.25>
+ST_13 : Operation 132 [1/5] (7.25ns)   --->   "%temp_R = fsub i32 %mul, i32 %mul1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176]   --->   Operation 132 'fsub' 'temp_R' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 133 [1/5] (7.25ns)   --->   "%temp_I = fadd i32 %mul2, i32 %mul3" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177]   --->   Operation 133 'fadd' 'temp_I' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 134 [1/2] (3.25ns)   --->   "%X_R_0_load_1 = load i8 %X_R_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 134 'load' 'X_R_0_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 135 [1/2] (3.25ns)   --->   "%X_R_1_load_1 = load i8 %X_R_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 135 'load' 'X_R_1_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 136 [1/2] (3.25ns)   --->   "%X_R_2_load_1 = load i8 %X_R_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 136 'load' 'X_R_2_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 137 [1/2] (3.25ns)   --->   "%X_R_3_load_1 = load i8 %X_R_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 137 'load' 'X_R_3_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 138 [1/1] (1.82ns)   --->   "%tmp_2 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 %X_R_0_load_1, i32 %X_R_1_load_1, i32 %X_R_2_load_1, i32 %X_R_3_load_1, i2 %empty" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 138 'mux' 'tmp_2' <Predicate = true> <Delay = 1.82> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 139 [1/2] (3.25ns)   --->   "%X_I_0_load_1 = load i8 %X_I_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 139 'load' 'X_I_0_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 140 [1/2] (3.25ns)   --->   "%X_I_1_load_1 = load i8 %X_I_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 140 'load' 'X_I_1_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 141 [1/2] (3.25ns)   --->   "%X_I_2_load_1 = load i8 %X_I_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 141 'load' 'X_I_2_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 142 [1/2] (3.25ns)   --->   "%X_I_3_load_1 = load i8 %X_I_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 142 'load' 'X_I_3_load_1' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_13 : Operation 143 [1/1] (1.82ns)   --->   "%tmp_3 = mux i32 @_ssdm_op_Mux.ap_auto.4float.i2, i32 %X_I_0_load_1, i32 %X_I_1_load_1, i32 %X_I_2_load_1, i32 %X_I_3_load_1, i2 %empty" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 143 'mux' 'tmp_3' <Predicate = true> <Delay = 1.82> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 144 [1/1] (0.95ns)   --->   "%switch_ln181 = switch i2 %empty, void %arrayidx4418.case.3, i2 0, void %arrayidx4418.case.0, i2 1, void %arrayidx4418.case.1, i2 2, void %arrayidx4418.case.2" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 144 'switch' 'switch_ln181' <Predicate = true> <Delay = 0.95>
+
+State 14 <SV = 13> <Delay = 7.25>
+ST_14 : Operation 145 [5/5] (7.25ns)   --->   "%sub = fsub i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 145 'fsub' 'sub' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 146 [5/5] (7.25ns)   --->   "%sub1 = fsub i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 146 'fsub' 'sub1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 147 [5/5] (7.25ns)   --->   "%add = fadd i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 147 'fadd' 'add' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 148 [5/5] (7.25ns)   --->   "%add1 = fadd i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 148 'fadd' 'add1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 7.25>
+ST_15 : Operation 149 [4/5] (7.25ns)   --->   "%sub = fsub i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 149 'fsub' 'sub' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 150 [4/5] (7.25ns)   --->   "%sub1 = fsub i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 150 'fsub' 'sub1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 151 [4/5] (7.25ns)   --->   "%add = fadd i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 151 'fadd' 'add' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 152 [4/5] (7.25ns)   --->   "%add1 = fadd i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 152 'fadd' 'add1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 7.25>
+ST_16 : Operation 153 [3/5] (7.25ns)   --->   "%sub = fsub i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 153 'fsub' 'sub' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 154 [3/5] (7.25ns)   --->   "%sub1 = fsub i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 154 'fsub' 'sub1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 155 [3/5] (7.25ns)   --->   "%add = fadd i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 155 'fadd' 'add' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 156 [3/5] (7.25ns)   --->   "%add1 = fadd i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 156 'fadd' 'add1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 7.25>
+ST_17 : Operation 157 [2/5] (7.25ns)   --->   "%sub = fsub i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 157 'fsub' 'sub' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 158 [2/5] (7.25ns)   --->   "%sub1 = fsub i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 158 'fsub' 'sub1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 159 [2/5] (7.25ns)   --->   "%add = fadd i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 159 'fadd' 'add' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 160 [2/5] (7.25ns)   --->   "%add1 = fadd i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 160 'fadd' 'add1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 7.25>
+ST_18 : Operation 161 [1/5] (7.25ns)   --->   "%sub = fsub i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 161 'fsub' 'sub' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 162 [1/5] (7.25ns)   --->   "%sub1 = fsub i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 162 'fsub' 'sub1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 163 [1/5] (7.25ns)   --->   "%add = fadd i32 %tmp_2, i32 %temp_R" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 163 'fadd' 'add' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 164 [1/5] (7.25ns)   --->   "%add1 = fadd i32 %tmp_3, i32 %temp_I" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 164 'fadd' 'add1' <Predicate = true> <Delay = 7.25> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 206 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 206 'ret' 'ret_ln0' <Predicate = (!icmp_ln169)> <Delay = 0.00>
+
+State 19 <SV = 18> <Delay = 3.25>
+ST_19 : Operation 165 [1/1] (0.00ns)   --->   "%specloopname_ln170 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:170]   --->   Operation 165 'specloopname' 'specloopname_ln170' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 166 [1/1] (0.00ns)   --->   "%OUT_R_0_addr = getelementptr i32 %OUT_R_0, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 166 'getelementptr' 'OUT_R_0_addr' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 167 [1/1] (0.00ns)   --->   "%OUT_R_1_addr = getelementptr i32 %OUT_R_1, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 167 'getelementptr' 'OUT_R_1_addr' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 168 [1/1] (0.00ns)   --->   "%OUT_R_2_addr = getelementptr i32 %OUT_R_2, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 168 'getelementptr' 'OUT_R_2_addr' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 169 [1/1] (0.00ns)   --->   "%OUT_R_3_addr = getelementptr i32 %OUT_R_3, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 169 'getelementptr' 'OUT_R_3_addr' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 170 [1/1] (3.25ns)   --->   "%store_ln179 = store i32 %sub, i8 %OUT_R_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 170 'store' 'store_ln179' <Predicate = (trunc_ln850 == 2)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 171 [1/1] (0.00ns)   --->   "%OUT_I_2_addr = getelementptr i32 %OUT_I_2, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 171 'getelementptr' 'OUT_I_2_addr' <Predicate = (trunc_ln850 == 2)> <Delay = 0.00>
+ST_19 : Operation 172 [1/1] (3.25ns)   --->   "%store_ln180 = store i32 %sub1, i8 %OUT_I_2_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 172 'store' 'store_ln180' <Predicate = (trunc_ln850 == 2)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 173 [1/1] (0.00ns)   --->   "%br_ln180 = br void %arrayidx3414.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 173 'br' 'br_ln180' <Predicate = (trunc_ln850 == 2)> <Delay = 0.00>
+ST_19 : Operation 174 [1/1] (3.25ns)   --->   "%store_ln179 = store i32 %sub, i8 %OUT_R_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 174 'store' 'store_ln179' <Predicate = (trunc_ln850 == 1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 175 [1/1] (0.00ns)   --->   "%OUT_I_1_addr = getelementptr i32 %OUT_I_1, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 175 'getelementptr' 'OUT_I_1_addr' <Predicate = (trunc_ln850 == 1)> <Delay = 0.00>
+ST_19 : Operation 176 [1/1] (3.25ns)   --->   "%store_ln180 = store i32 %sub1, i8 %OUT_I_1_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 176 'store' 'store_ln180' <Predicate = (trunc_ln850 == 1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 177 [1/1] (0.00ns)   --->   "%br_ln180 = br void %arrayidx3414.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 177 'br' 'br_ln180' <Predicate = (trunc_ln850 == 1)> <Delay = 0.00>
+ST_19 : Operation 178 [1/1] (3.25ns)   --->   "%store_ln179 = store i32 %sub, i8 %OUT_R_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 178 'store' 'store_ln179' <Predicate = (trunc_ln850 == 0)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 179 [1/1] (0.00ns)   --->   "%OUT_I_0_addr = getelementptr i32 %OUT_I_0, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 179 'getelementptr' 'OUT_I_0_addr' <Predicate = (trunc_ln850 == 0)> <Delay = 0.00>
+ST_19 : Operation 180 [1/1] (3.25ns)   --->   "%store_ln180 = store i32 %sub1, i8 %OUT_I_0_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 180 'store' 'store_ln180' <Predicate = (trunc_ln850 == 0)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 181 [1/1] (0.00ns)   --->   "%br_ln180 = br void %arrayidx3414.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 181 'br' 'br_ln180' <Predicate = (trunc_ln850 == 0)> <Delay = 0.00>
+ST_19 : Operation 182 [1/1] (3.25ns)   --->   "%store_ln179 = store i32 %sub, i8 %OUT_R_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179]   --->   Operation 182 'store' 'store_ln179' <Predicate = (trunc_ln850 == 3)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 183 [1/1] (0.00ns)   --->   "%OUT_I_3_addr = getelementptr i32 %OUT_I_3, i64 0, i64 %zext_ln176" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 183 'getelementptr' 'OUT_I_3_addr' <Predicate = (trunc_ln850 == 3)> <Delay = 0.00>
+ST_19 : Operation 184 [1/1] (3.25ns)   --->   "%store_ln180 = store i32 %sub1, i8 %OUT_I_3_addr" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 184 'store' 'store_ln180' <Predicate = (trunc_ln850 == 3)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 185 [1/1] (0.00ns)   --->   "%br_ln180 = br void %arrayidx3414.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180]   --->   Operation 185 'br' 'br_ln180' <Predicate = (trunc_ln850 == 3)> <Delay = 0.00>
+ST_19 : Operation 186 [1/1] (0.00ns)   --->   "%OUT_R_0_addr_1 = getelementptr i32 %OUT_R_0, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 186 'getelementptr' 'OUT_R_0_addr_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 187 [1/1] (0.00ns)   --->   "%OUT_R_1_addr_1 = getelementptr i32 %OUT_R_1, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 187 'getelementptr' 'OUT_R_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 188 [1/1] (0.00ns)   --->   "%OUT_R_2_addr_1 = getelementptr i32 %OUT_R_2, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 188 'getelementptr' 'OUT_R_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 189 [1/1] (0.00ns)   --->   "%OUT_R_3_addr_1 = getelementptr i32 %OUT_R_3, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 189 'getelementptr' 'OUT_R_3_addr_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 190 [1/1] (3.25ns)   --->   "%store_ln181 = store i32 %add, i8 %OUT_R_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 190 'store' 'store_ln181' <Predicate = (empty == 2)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 191 [1/1] (0.00ns)   --->   "%OUT_I_2_addr_1 = getelementptr i32 %OUT_I_2, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 191 'getelementptr' 'OUT_I_2_addr_1' <Predicate = (empty == 2)> <Delay = 0.00>
+ST_19 : Operation 192 [1/1] (3.25ns)   --->   "%store_ln182 = store i32 %add1, i8 %OUT_I_2_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 192 'store' 'store_ln182' <Predicate = (empty == 2)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 193 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx4418.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 193 'br' 'br_ln182' <Predicate = (empty == 2)> <Delay = 0.00>
+ST_19 : Operation 194 [1/1] (3.25ns)   --->   "%store_ln181 = store i32 %add, i8 %OUT_R_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 194 'store' 'store_ln181' <Predicate = (empty == 1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 195 [1/1] (0.00ns)   --->   "%OUT_I_1_addr_1 = getelementptr i32 %OUT_I_1, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 195 'getelementptr' 'OUT_I_1_addr_1' <Predicate = (empty == 1)> <Delay = 0.00>
+ST_19 : Operation 196 [1/1] (3.25ns)   --->   "%store_ln182 = store i32 %add1, i8 %OUT_I_1_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 196 'store' 'store_ln182' <Predicate = (empty == 1)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 197 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx4418.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 197 'br' 'br_ln182' <Predicate = (empty == 1)> <Delay = 0.00>
+ST_19 : Operation 198 [1/1] (3.25ns)   --->   "%store_ln181 = store i32 %add, i8 %OUT_R_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 198 'store' 'store_ln181' <Predicate = (empty == 0)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 199 [1/1] (0.00ns)   --->   "%OUT_I_0_addr_1 = getelementptr i32 %OUT_I_0, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 199 'getelementptr' 'OUT_I_0_addr_1' <Predicate = (empty == 0)> <Delay = 0.00>
+ST_19 : Operation 200 [1/1] (3.25ns)   --->   "%store_ln182 = store i32 %add1, i8 %OUT_I_0_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 200 'store' 'store_ln182' <Predicate = (empty == 0)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 201 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx4418.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 201 'br' 'br_ln182' <Predicate = (empty == 0)> <Delay = 0.00>
+ST_19 : Operation 202 [1/1] (3.25ns)   --->   "%store_ln181 = store i32 %add, i8 %OUT_R_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181]   --->   Operation 202 'store' 'store_ln181' <Predicate = (empty == 3)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 203 [1/1] (0.00ns)   --->   "%OUT_I_3_addr_1 = getelementptr i32 %OUT_I_3, i64 0, i64 %zext_ln179" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 203 'getelementptr' 'OUT_I_3_addr_1' <Predicate = (empty == 3)> <Delay = 0.00>
+ST_19 : Operation 204 [1/1] (3.25ns)   --->   "%store_ln182 = store i32 %add1, i8 %OUT_I_3_addr_1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 204 'store' 'store_ln182' <Predicate = (empty == 3)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_19 : Operation 205 [1/1] (0.00ns)   --->   "%br_ln182 = br void %arrayidx4418.exit" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182]   --->   Operation 205 'br' 'br_ln182' <Predicate = (empty == 3)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 5.41ns
+The critical path consists of the following:
+	'alloca' operation ('__Val2__') [24]  (0 ns)
+	'load' operation ('i') on local variable '__Val2__' [36]  (0 ns)
+	'and' operation ('__Result__') [50]  (2.94 ns)
+	'icmp' operation ('icmp_ln1065') [160]  (2.47 ns)
+
+ <State 2>: 4.35ns
+The critical path consists of the following:
+	'mul' operation ('ret.V') [52]  (4.35 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('W_real_addr', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174) [54]  (0 ns)
+	'load' operation ('c2', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174) on array 'W_real' [55]  (3.25 ns)
+
+ <State 4>: 5.08ns
+The critical path consists of the following:
+	'load' operation ('X_R_0_load', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) on array 'X_R_0' [64]  (3.25 ns)
+	'mux' operation ('tmp', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [68]  (1.83 ns)
+
+ <State 5>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [69]  (5.7 ns)
+
+ <State 6>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [69]  (5.7 ns)
+
+ <State 7>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [69]  (5.7 ns)
+
+ <State 8>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('mul', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [69]  (5.7 ns)
+
+ <State 9>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [80]  (7.26 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [80]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [80]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [80]  (7.26 ns)
+
+ <State 13>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176) [80]  (7.26 ns)
+
+ <State 14>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [132]  (7.26 ns)
+
+ <State 15>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [132]  (7.26 ns)
+
+ <State 16>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [132]  (7.26 ns)
+
+ <State 17>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [132]  (7.26 ns)
+
+ <State 18>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [132]  (7.26 ns)
+
+ <State 19>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('OUT_R_1_addr_1', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) [134]  (0 ns)
+	'store' operation ('store_ln181', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181) of variable 'add', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181 on array 'OUT_R_1' [145]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

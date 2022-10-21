@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft_stage_last.cpp" path="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\FFT\FFT\HLS\1_Subcomponents\fft_stage_last\fft_stage_last.cpp"/>
+    <originFiles name="fft_stage_last.h" path="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\FFT\FFT\HLS\1_Subcomponents\fft_stage_last\fft_stage_last.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fft_stage_last_test.cpp" path="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\FFT\FFT\HLS\1_Subcomponents\fft_stage_last\fft_stage_last_test.cpp"/>
+    <originFiles name="out.gold.dat" path="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\FFT\FFT\HLS\1_Subcomponents\fft_stage_last\out.gold.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

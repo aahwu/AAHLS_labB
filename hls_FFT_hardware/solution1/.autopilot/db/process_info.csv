@@ -1,0 +1,6 @@
+,AESL_inst_fft,,module_status1.csv
+,grp_fft_Pipeline_Reverse_fu_398,,module_status2.csv
+,grp_fft_Pipeline_DFTpts_fu_434,,module_status3.csv
+,grp_fft_stages_fu_454,,module_status4.csv
+grp_fft_stages_fu_454,grp_fft_stages_Pipeline_DFTpts_fu_64,,module_status5.csv
+,grp_fft_Pipeline_butterfly_fu_487,,module_status6.csv

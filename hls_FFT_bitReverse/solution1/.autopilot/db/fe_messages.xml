@@ -1,0 +1,99 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_bitReverse/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=bit_reverse" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_bitReverse/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=bit_reverse" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_R intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_R inter RAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_I intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_I inter RAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j' into 'ap_int_base&lt;1024, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j" Caller="ap_int_base&lt;1024, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;1024, false&gt;::ap_int_base(int)' into 'ap_uint&lt;1024&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;1024, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;1024&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1175:30" msg_body="Inlining function 'ap_bit_ref&lt;1024, false&gt;::ap_bit_ref(ap_int_base&lt;1024, false&gt;*, int)' into 'ap_int_base&lt;1024, false&gt;::operator[](int)'">
+        <args Callee="ap_bit_ref&lt;1024, false&gt;::ap_bit_ref(ap_int_base&lt;1024, false&gt;*, int)" Caller="ap_int_base&lt;1024, false&gt;::operator[](int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:1088:365" msg_body="Inlining function 'ap_bit_ref&lt;1024, false&gt;::operator bool() const' into 'bool operator==&lt;1024, false&gt;(ap_bit_ref&lt;1024, false&gt; const&amp;, int)'">
+        <args Callee="ap_bit_ref&lt;1024, false&gt;::operator bool() const" Caller="bool operator==&lt;1024, false&gt;(ap_bit_ref&lt;1024, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(int)' into 'ap_uint&lt;32&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;32&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:261:76" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:334:67" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)' into 'ap_uint&lt;32&gt;::ap_uint(unsigned int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)" Caller="ap_uint&lt;32&gt;::ap_uint(unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1184:46" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::to_int() const' into 'ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::to_int() const" Caller="ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1184:30" msg_body="Inlining function 'ap_bit_ref&lt;1024, false&gt;::ap_bit_ref(ap_int_base&lt;1024, false&gt;*, int)' into 'ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_bit_ref&lt;1024, false&gt;::ap_bit_ref(ap_int_base&lt;1024, false&gt;*, int)" Caller="ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:45:25" msg_body="Inlining function 'ap_uint&lt;1024&gt;::ap_uint(int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_uint&lt;1024&gt;::ap_uint(int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:61:8" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:60:8" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:59:17" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:58:17" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:54:14" msg_body="Inlining function 'ap_bit_ref&lt;1024, false&gt;::operator=(int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_bit_ref&lt;1024, false&gt;::operator=(int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:54:4" msg_body="Inlining function 'ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_bit_ref&lt;1024, false&gt; ap_int_base&lt;1024, false&gt;::operator[]&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:53:8" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:51:7" msg_body="Inlining function 'ap_int_base&lt;1024, false&gt;::operator[](int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;1024, false&gt;::operator[](int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:53:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:52:23" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:51:16" msg_body="Inlining function 'bool operator==&lt;1024, false&gt;(ap_bit_ref&lt;1024, false&gt; const&amp;, int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="bool operator==&lt;1024, false&gt;(ap_bit_ref&lt;1024, false&gt; const&amp;, int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:40:0" msg_body="Inlining function 'reverse(unsigned int, unsigned int)' into 'bit_reverse(float*, float*)'">
+        <args Callee="reverse(unsigned int, unsigned int)" Caller="bit_reverse(float*, float*)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

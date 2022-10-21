@@ -1,0 +1,79 @@
+<pragmas>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="587" pragmaType="inline" parentfunction="ap_int_base<33, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="1152" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<32, false>::logic operator|<32, false>(int, ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1064" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator==<32, false>(ap_int_base<32, false> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="63" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="64" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="65" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="66" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="67" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="68" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="69" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="70" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="71" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="72" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="73" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="74" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="75" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="76" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="77" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="78" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="79" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="80" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="81" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="82" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable=""/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="83" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable="OUT_R"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="84" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="85" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable="X_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="86" pragmaType="array_partition" parentfunction="fft" dim="1" factor="4" mode="cyclic" dynamic="0" variable="X_R"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="230" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="559" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int(long)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="403" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="587" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="559" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="672" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1172" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="145" pragmaType="inline" parentfunction="ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="333" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="9" pragmaType="unroll" parentfunction="fft_stage_last" factor="2" skip_exit_check="1"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="203" pragmaType="dependence" parentfunction="fft_stage_last" class="" direction="WAW" type="intra" distance="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="204" pragmaType="dependence" parentfunction="fft_stage_last" class="" direction="WAW" type="intra" distance="0" variable="OUT_R"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="10" pragmaType="unroll" parentfunction="bit_reverse" factor="2" skip_exit_check="1"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1091" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1679" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<($_0)32, true>::mult operator*<32, false>(int, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="587" pragmaType="inline" parentfunction="ap_int_base<64, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1834" pragmaType="inline" parentfunction="bool operator==<32, false>(int, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="559" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="7" pragmaType="unroll" parentfunction="fft_stage_first" factor="2" skip_exit_check="0"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="132" pragmaType="dependence" parentfunction="fft_stage_first" class="" direction="WAW" type="intra" distance="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="133" pragmaType="dependence" parentfunction="fft_stage_first" class="" direction="WAW" type="intra" distance="0" variable="OUT_R"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1540" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<32, false>::mult operator*<32, true, 32, false>(ap_int_base<32, true> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="260" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="260" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="165" pragmaType="dependence" parentfunction="fft_stages" class="" direction="WAW" type="intra" distance="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="166" pragmaType="dependence" parentfunction="fft_stages" class="" direction="WAW" type="intra" distance="0" variable="OUT_R"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="167" pragmaType="dependence" parentfunction="fft_stages" class="" direction="WAW" type="inter" distance="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" line="168" pragmaType="dependence" parentfunction="fft_stages" class="" direction="WAW" type="inter" distance="0" variable="OUT_R"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1544" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<32, false>::logic operator|<32, true, 32, false>(ap_int_base<32, true> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="260" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="145" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="567" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="260" pragmaType="inline" parentfunction="ap_int_base<1024, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="820" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="261" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="349" pragmaType="inline" parentfunction="ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="567" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="334" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="333" pragmaType="inline" parentfunction="ap_uint<1024>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="260" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::operator=(int)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+</pragmas>

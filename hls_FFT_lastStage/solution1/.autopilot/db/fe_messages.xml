@@ -1,0 +1,81 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R cyclic factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I cyclic factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fft_stage_last" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fft_stage_last" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_R block factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=X_I block factor=4 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_lastStage/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(int)' into 'ap_uint&lt;32&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;32&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, true&gt;::ssdm_int(int)' into 'ap_int_base&lt;32, true&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, true&gt;::ssdm_int(int)" Caller="ap_int_base&lt;32, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1773:167" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1773:164" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;&amp; ap_int_base&lt;32, false&gt;::operator+=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;&amp; ap_int_base&lt;32, false&gt;::operator+=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:27:19" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'fft_stage_last(float*, float*, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="fft_stage_last(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:37:6" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)' into 'fft_stage_last(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;&amp; operator+=&lt;32, false&gt;(ap_int_base&lt;32, false&gt;&amp;, int)" Caller="fft_stage_last(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:36:15" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stage_last(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stage_last(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:35:15" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stage_last(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stage_last(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:17:0" msg_body="Unrolling loop 'butterfly' (../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:32:12) in function 'fft_stage_last' partially with a factor of 2">
+        <args Factor="2" LoopLoc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:32:12" LoopName="butterfly"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:17:0" msg_body="Applying array_partition to 'X_R': Block partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Block" UOName="X_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:17:0" msg_body="Applying array_partition to 'X_I': Block partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Block" UOName="X_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:17:0" msg_body="Applying array_partition to 'OUT_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="OUT_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/1_Subcomponents/fft_stage_last/fft_stage_last.cpp:17:0" msg_body="Applying array_partition to 'OUT_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="OUT_I"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

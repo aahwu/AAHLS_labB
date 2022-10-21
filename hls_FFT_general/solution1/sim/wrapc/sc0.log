@@ -1,0 +1,6 @@
+   Build using "E:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling fft_stages_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fft_stages.cpp
+   Compiling fft_stages.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fft_stages_ir.ll
+   Generating cosim.tv.exe

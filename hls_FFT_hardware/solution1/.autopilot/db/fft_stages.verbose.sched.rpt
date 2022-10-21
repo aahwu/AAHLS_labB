@@ -1,0 +1,134 @@
+
+
+================================================================
+== Vitis HLS Report for 'fft_stages'
+================================================================
+* Date:           Fri Oct 21 22:25:55 2022
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        hls_FFT_hardware
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.46>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%stage_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %stage"   --->   Operation 4 'read' 'stage_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%stage_cast1 = zext i4 %stage_read"   --->   Operation 5 'zext' 'stage_cast1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%stage_cast = zext i4 %stage_read"   --->   Operation 6 'zext' 'stage_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (2.39ns)   --->   "%DFTpts = shl i10 1, i10 %stage_cast" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:161]   --->   Operation 7 'shl' 'DFTpts' <Predicate = true> <Delay = 2.39> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 2.39> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%numBF = partselect i9 @_ssdm_op_PartSelect.i9.i10.i32.i32, i10 %DFTpts, i32 1, i32 9" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:162]   --->   Operation 8 'partselect' 'numBF' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (3.46ns)   --->   "%ec_V = lshr i11 1024, i11 %stage_cast1" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:164]   --->   Operation 9 'lshr' 'ec_V' <Predicate = true> <Delay = 3.46> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 3.46> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln1540 = trunc i11 %ec_V"   --->   Operation 10 'trunc' 'trunc_ln1540' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.23>
+ST_2 : Operation 11 [1/1] (1.82ns)   --->   "%one_V = add i9 %numBF, i9 511" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163]   --->   Operation 11 'add' 'one_V' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (1.73ns)   --->   "%sub3 = add i4 %stage_read, i4 15"   --->   Operation 12 'add' 'sub3' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (1.73ns)   --->   "%sub5 = add i4 %stage_read, i4 14"   --->   Operation 13 'add' 'sub5' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [2/2] (5.41ns)   --->   "%call_ln163 = call void @fft_stages_Pipeline_DFTpts, i9 %one_V, i9 %numBF, i32 %OUT_I_0, i32 %OUT_R_0, i32 %OUT_R_1, i32 %OUT_R_2, i32 %OUT_R_3, i4 %sub3, i4 %sub5, i9 %trunc_ln1540, i32 %X_R_0, i32 %X_R_1, i32 %X_R_2, i32 %X_R_3, i32 %X_I_0, i32 %X_I_1, i32 %X_I_2, i32 %X_I_3, i32 %OUT_I_1, i32 %OUT_I_2, i32 %OUT_I_3, i32 %W_real, i32 %W_imag" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163]   --->   Operation 14 'call' 'call_ln163' <Predicate = true> <Delay = 5.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln163 = call void @fft_stages_Pipeline_DFTpts, i9 %one_V, i9 %numBF, i32 %OUT_I_0, i32 %OUT_R_0, i32 %OUT_R_1, i32 %OUT_R_2, i32 %OUT_R_3, i4 %sub3, i4 %sub5, i9 %trunc_ln1540, i32 %X_R_0, i32 %X_R_1, i32 %X_R_2, i32 %X_R_3, i32 %X_I_0, i32 %X_I_1, i32 %X_I_2, i32 %X_I_3, i32 %OUT_I_1, i32 %OUT_I_2, i32 %OUT_I_3, i32 %W_real, i32 %W_imag" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163]   --->   Operation 15 'call' 'call_ln163' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln188 = ret" [../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:188]   --->   Operation 16 'ret' 'ret_ln188' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.46ns
+The critical path consists of the following:
+	wire read operation ('stage_read') on port 'stage' [20]  (0 ns)
+	'lshr' operation ('ec.V', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:164) [26]  (3.46 ns)
+
+ <State 2>: 7.24ns
+The critical path consists of the following:
+	'add' operation ('one.V', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163) [25]  (1.82 ns)
+	'call' operation ('call_ln163', ../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163) to 'fft_stages_Pipeline_DFTpts' [30]  (5.41 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

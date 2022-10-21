@@ -1,0 +1,113 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "fft",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fft"
+              }]
+          }
+        },
+        {
+          "functionName": "fft_stage_first",
+          "label": "DFTpts",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "2"
+              }]
+          }
+        },
+        {
+          "functionName": "fft_stages",
+          "label": "butterfly",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [
+              {
+                "name": "skip_exit_check",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "butterfly",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [
+              {
+                "name": "skip_exit_check",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "bit_reverse",
+          "label": "Reverse",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [
+              {
+                "name": "skip_exit_check",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_hardware\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fft"
+              }]
+          }
+        }
+      ]
+    }]}

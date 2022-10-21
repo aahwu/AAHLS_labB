@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_0'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.386+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_1'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.377+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_2'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.370+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_3'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.362+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_0'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.356+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_1'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.349+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_2'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.343+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_3'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.337+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_0'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.330+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_1'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.324+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_2'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.318+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_R_3'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.311+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_0'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.305+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_1'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.299+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_2'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.292+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'WAW' intra dependency for variable 'OUT_I_3'." projectName="hls_FFT_lastStage" solutionName="solution1" date="2022-10-21T00:40:33.285+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

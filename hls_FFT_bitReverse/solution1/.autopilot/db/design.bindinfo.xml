@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln50_fu_129_p2" SOURCE="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:50" VARIABLE="icmp_ln50" MODULE="bit_reverse" LOOP="Reverse" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_fu_135_p2" SOURCE="../FFT/FFT/HLS/1_Subcomponents/1_bit_reverse/bit_reverse.cpp:50" VARIABLE="add_ln50" MODULE="bit_reverse" LOOP="Reverse" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op shl" ID="" IMPL="auto_pipe" LATENCY="0" OPTYPE="shl" PRAGMA="" RTLNAME="shl_ln825_fu_154_p2" SOURCE="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:825" VARIABLE="shl_ln825" MODULE="bit_reverse" LOOP="Reverse" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln825_fu_160_p2" SOURCE="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:825" VARIABLE="and_ln825" MODULE="bit_reverse" LOOP="Reverse" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="p_Result_s_fu_166_p2" SOURCE="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:825" VARIABLE="p_Result_s" MODULE="bit_reverse" LOOP="Reverse" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

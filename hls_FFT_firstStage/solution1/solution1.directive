@@ -1,0 +1,52 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="fft_stage_first"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="DFTpts" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="X_I"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="4"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="X_R"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="4"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="OUT_R"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="4"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" positionalBoolean="4" value="OUT_I"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="4"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft_stage_first" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="fft_stage_first"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

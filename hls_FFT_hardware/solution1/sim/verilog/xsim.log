@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 21 22:27:02 2022
+# Process ID: 39644
+# Current directory: C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/fft/xsim_script.tcl}
+# Log file: C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/sim/verilog\xsim.jou
+# Running On: LAPTOP-R2GBPVNV, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16539 MB
+#-----------------------------------------------------------
+source xsim.dir/fft/xsim_script.tcl
+# xsim {fft} -view {{fft_dataflow_ana.wcfg}} -tclbatch {fft.tcl} -protoinst {fft.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file fft.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft//AESL_inst_fft_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft/grp_fft_Pipeline_DFTpts_fu_434/grp_fft_Pipeline_DFTpts_fu_434_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft/grp_fft_Pipeline_Reverse_fu_398/grp_fft_Pipeline_Reverse_fu_398_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft/grp_fft_Pipeline_butterfly_fu_487/grp_fft_Pipeline_butterfly_fu_487_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/grp_fft_stages_Pipeline_DFTpts_fu_64_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_fu_454_activity
+Time resolution is 1 ps
+open_wave_config fft_dataflow_ana.wcfg
+source fft.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $coutputgroup]
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_3_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_2_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_1_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_I_0_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_3_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_2_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_1_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_d1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_d0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/OUT_R_0_address0 -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_3_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_2_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_1_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_I_0_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_3_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_2_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_1_address0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_q1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_address1 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_q0 -into $return_group -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/AESL_inst_fft/X_R_0_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_start -into $blocksiggroup
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_done -into $blocksiggroup
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_idle -into $blocksiggroup
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_fft_top/AESL_inst_fft/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_fft_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_fft_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_fft_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_R_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_R_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_R_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_R_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_I_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_I_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_I_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_X_I_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_R_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_R_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_R_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_R_3 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_I_0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_I_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_I_2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_fft_top/LENGTH_OUT_I_3 -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcoutputgroup]
+## add_wave /apatb_fft_top/OUT_I_3_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_3_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_2_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_1_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_I_0_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_3_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_2_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_1_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/OUT_R_0_address0 -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_fft_top/X_I_3_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_3_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_3_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_3_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_3_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_3_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_2_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_2_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_2_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_2_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_2_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_2_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_1_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_1_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_1_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_1_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_1_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_1_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_0_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_0_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_0_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_0_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_I_0_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_I_0_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_3_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_3_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_3_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_3_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_3_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_3_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_2_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_2_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_2_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_2_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_2_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_2_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_1_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_1_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_1_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_1_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_1_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_1_address0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_0_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_0_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_0_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_0_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_fft_top/X_R_0_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_fft_top/X_R_0_address0 -into $tb_return_group -radix hex
+## save_wave_config fft.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U161/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U163/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U165/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U167/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U157/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U158/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U159/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U160/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U162/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U164/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U166/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U168/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 13375 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 13375 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18705 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18705 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18705 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18705 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18745 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 18745 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24035 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24035 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24075 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 24075 ns  Iteration: 12  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29365 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29365 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29365 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29365 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 29405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34695 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34695 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34695 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34695 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34735 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 34735 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40025 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40025 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40025 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40025 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40065 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40065 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45355 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45355 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45355 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45355 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45395 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 45395 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50685 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U56/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50685 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U57/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50685 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U58/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50685 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U59/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50725 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fsub_32ns_32ns_32_5_full_dsp_1_U54/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 50725 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/grp_fft_stages_fu_454/grp_fft_stages_Pipeline_DFTpts_fu_64/fadd_32ns_32ns_32_5_full_dsp_1_U55/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [n/a] @ "53385000"
+////////////////////////////////////////////////////////////////////////////////////
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U157/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U158/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U159/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U160/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U161/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U162/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U163/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U164/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U165/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fsub_32ns_32ns_32_5_full_dsp_1_U166/fft_fsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U167/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 53405 ns  Iteration: 11  Process: /apatb_fft_top/AESL_inst_fft/fadd_32ns_32ns_32_5_full_dsp_1_U168/fft_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+$finish called at time : 53445 ns : File "C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/sim/verilog/fft.autotb.v" Line 1200
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1224.082 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 46964 KB (Peak: 46964 KB), Simulation CPU Usage: 11687 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 21 22:27:16 2022...

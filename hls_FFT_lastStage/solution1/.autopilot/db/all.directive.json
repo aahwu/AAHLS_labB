@@ -1,0 +1,166 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fft_stage_last"
+              }]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "butterfly",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "2"
+              }]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "X_R"
+              },
+              {
+                "name": "block",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "4"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "X_I"
+              },
+              {
+                "name": "block",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "4"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "OUT_R"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "4"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "OUT_I"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "4"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "fft_stage_last",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_lastStage\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fft_stage_last"
+              }]
+          }
+        }
+      ]
+    }]}

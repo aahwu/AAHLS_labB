@@ -1,0 +1,8 @@
+fft_stages_faddfsub_32ns_32ns_32_5_full_dsp_1
+fft_stages_fsub_32ns_32ns_32_5_full_dsp_1
+fft_stages_fmul_32ns_32ns_32_4_max_dsp_1
+fft_stages_mux_42_32_1_1
+fft_stages_mul_9s_9s_9_1_1
+fft_stages_W_real_ROM_AUTO_1R
+fft_stages_W_imag_ROM_AUTO_1R
+fft_stages

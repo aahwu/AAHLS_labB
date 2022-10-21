@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1666362357352">
+  <ports id="1" name="X_R_0" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="X_R_1" type="PortType" coreName="RAM" coreId="1650546424" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="X_R_2" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="4" name="X_R_3" type="PortType" coreName="RAM" coreId="97077864" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="5" name="Stage0_R_1" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="6" name="Stage0_R_3" type="PortType" coreName="RAM" coreId="105787720" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="7" name="Stage0_I_1" type="PortType" coreName="RAM" coreId="94408696" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="8" name="X_I_0" type="PortType" coreName="RAM" coreId="645115728" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="9" name="X_I_1" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="10" name="X_I_2" type="PortType" coreName="RAM" coreId="1557404928" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="11" name="X_I_3" type="PortType" coreName="RAM" coreId="1411636880" bitwidth="32" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="12" name="Stage0_R" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="13" name="Stage0_R_2" type="PortType" coreName="RAM" coreId="32" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="14" name="Stage0_I" type="PortType" coreName="RAM" coreId="1768712536" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="15" name="Stage0_I_2" type="PortType" coreName="RAM" coreId="1818849391" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="16" name="Stage0_I_3" type="PortType" coreName="RAM" coreId="1213932093" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.7/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.2"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.4/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.4/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.4/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.4/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.2"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="163" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.4"/>
+  <edges id="169" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.5"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.5"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.4/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.4/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.7"/>
+  <edges id="174" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.8"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.8"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.4/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.9"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.4/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.10"/>
+  <edges id="179" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.11"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.11"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.4/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.12"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.4/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.13"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.4/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.4/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.4/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.4/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.4/@node_objs.15" sink_obj="//@ports.4"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.15"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.4/@node_objs.16" sink_obj="//@ports.5"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.16"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.4/@node_objs.17" sink_obj="//@ports.6"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <edges id="200" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.18"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.18"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.4/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.19"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.4/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.20"/>
+  <edges id="205" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.21"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.21"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.4/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.22"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.4/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.23"/>
+  <edges id="210" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.24"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.24"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.4/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.25"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.4/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.26"/>
+  <edges id="215" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.27"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.27"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.4/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.28"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.4/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.29"/>
+  <edges id="221" source_obj="//@regions.0/@basic_blocks.4/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.30"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.4/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.30"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.4/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.30"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.4/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.30"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.30"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.31"/>
+  <edges id="227" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.31"/>
+  <edges id="228" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.31"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="233" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="248" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="253" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="257" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="258" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="263" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="269" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="276" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="281" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@ports.11"/>
+  <edges id="283" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="284" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@ports.12"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="287" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="288" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@ports.13"/>
+  <edges id="293" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="294" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="297" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="299" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="303" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="304" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="309" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="311" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="315" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="316" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="317" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="318" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="319" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="323" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="324" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="325" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@ports.14"/>
+  <edges id="327" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="328" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="329" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="331" source_obj="//@regions.0/@basic_blocks.4/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="332" source_obj="//@regions.0/@basic_blocks.4/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="333" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@ports.15"/>
+  <edges id="335" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="336" source_obj="//@regions.0/@basic_blocks.4/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="337" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="514" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="515" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="516" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="517" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="518" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="519" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="520" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="521" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="522" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="523" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="524" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="525" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="526" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="527" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="528" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <blocks id="28" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="temp" originalName="input" coreId="99507890" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="temp_write_ln0" coreId="1635131458" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln0" coreId="1635141538" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc.i</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="130" name="_Z11bit_reversePfS_S_S_.exit.exitStub" type="BlockType">
+    <controlInputObjs>for.inc.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="_ln0" coreId="1226980724" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="459" pipe_depth="3" RegionName="Reverse">
+    <basic_blocks id="34" name="for.inc.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>arrayidx7.1.i31.exit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_Z11bit_reversePfS_S_S_.exit.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc.i.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="temp_2" lineNumber="111" originalName="temp" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="99507890" bitwidth="11" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_6" lineNumber="107" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_6_fu_404_p3" coreId="1635143512" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="107" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln107" lineNumber="107" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="99507890" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="107" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <controlInputObjs>for.inc.i.split</controlInputObjs>
+        <controlInputObjs>_Z11bit_reversePfS_S_S_.exit.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>107</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="73" name="for.inc.i.split" type="BlockType">
+      <controlInputObjs>for.inc.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.i29.case.0</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.i29.case.2</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="or_ln" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="or_ln_fu_412_p4" coreId="1635129778" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="or_ln111_1" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="or_ln111_1_fu_422_p4" coreId="99507890" bitwidth="7" opcode="partselect" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="zext_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="zext_ln111_fu_432_p1" coreId="1635137058" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="X_R_0_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1635128658" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_0</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="X_R_0_load" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="bitcast_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_fu_511_p1" coreId="1635132018" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="X_R_1_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="99507890" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="X_R_1_load" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="bitcast_ln111_1" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_fu_511_p2" coreId="1635132018" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="X_R_2_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="99507890" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_2</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="X_R_2_load" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="bitcast_ln111_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_fu_511_p3" coreId="1635132018" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="X_R_3_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1635132018" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_3</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="X_R_3_load" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="bitcast_ln111_3" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_fu_511_p4" coreId="99507890" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U1" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" bitwidth="32" opcode="mux" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="lshr_ln" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="lshr_ln_reg_661" coreId="99507890" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="zext_ln111_1" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="zext_ln111_1_fu_611_p1" coreId="1635139298" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="Stage0_R_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1635136498" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>Stage0_R</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="Stage0_R_2_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1635138178" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>Stage0_R_2</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="trunc_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="trunc_ln111_fu_454_p1" coreId="1635132018" bitwidth="2" opcode="trunc" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="icmp_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="icmp_ln111_fu_458_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.95" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="Stage0_I_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="4294967292" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>Stage0_I</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="X_I_0_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1551415080" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_0</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="X_I_0_load" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="bitcast_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_4_fu_540_p1" coreId="4294967292" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="X_I_1_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="4294967292" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="X_I_1_load" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="bitcast_ln112_1" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_4_fu_540_p2" coreId="4294967292" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="X_I_2_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1551471224" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_2</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="X_I_2_load" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="bitcast_ln112_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_4_fu_540_p3" coreId="4294967292" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="X_I_3_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="4294967292" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_3</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="X_I_3_load" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="bitcast_ln112_3" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_4_fu_540_p4" coreId="4294967292" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="tmp_4" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U2" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" bitwidth="32" opcode="mux" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="4294967292" opcode="br" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>arrayidx7.i29.case.2</controlInputObjs>
+        <controlInputObjs>arrayidx7.i29.case.0</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="78" name="arrayidx7.i29.case.2" type="BlockType">
+      <controlInputObjs>for.inc.i.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i33.i.split.1</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="Stage0_R_2_addr_write_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="Stage0_I_2_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1585425490" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>Stage0_I_2</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="Stage0_I_2_addr_write_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="br_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1585423810" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <controlInputObjs>for.inc.i33.i.split.1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="82" name="arrayidx7.i29.case.0" type="BlockType">
+      <controlInputObjs>for.inc.i.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i33.i.split.1</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="Stage0_R_addr_write_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="Stage0_I_addr_write_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="976974951" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <controlInputObjs>for.inc.i33.i.split.1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="115" name="for.inc.i33.i.split.1" type="BlockType">
+      <controlInputObjs>arrayidx7.i29.case.2</controlInputObjs>
+      <controlInputObjs>arrayidx7.i29.case.0</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.1.i31.case.1</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.1.i31.case.3</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="zext_ln111_1_cast" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="zext_ln111_1_cast_fu_464_p3" coreId="1701470831" bitwidth="8" opcode="bitconcatenate" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="zext_ln111_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="zext_ln111_2_fu_472_p1" coreId="1769169250" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="X_R_0_addr_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="9" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_0</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="X_R_0_load_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="bitcast_ln111_4" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_s_fu_569_p1" coreId="1734439968" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="X_R_1_addr_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1852402798" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="X_R_1_load_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="bitcast_ln111_5" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_s_fu_569_p2" coreId="1445951598" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="X_R_2_addr_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="543649391" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_2</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="X_R_2_load_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="bitcast_ln111_6" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_s_fu_569_p3" coreId="6759712" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="X_R_3_addr_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1952917093" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_R_3</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="X_R_3_load_2" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="bitcast_ln111_7" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_s_fu_569_p4" coreId="504" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="tmp_s" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U3" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" bitwidth="32" opcode="mux" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="Stage0_R_1_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1769239916" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>Stage0_R_1</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="Stage0_R_3_addr" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1663050274" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>Stage0_R_3</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="Stage0_I_1_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1767862369" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>Stage0_I_1</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="X_I_0_addr_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1663056756" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_0</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="X_I_0_load_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="bitcast_ln112_4" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_1_fu_598_p1" coreId="1852141679" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="X_I_1_addr_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="741487419" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="X_I_1_load_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="bitcast_ln112_5" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_1_fu_598_p2" coreId="539767347" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="X_I_2_addr_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="980447331" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_2</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="X_I_2_load_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="bitcast_ln112_6" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_1_fu_598_p3" coreId="1629890875" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="X_I_3_addr_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1030909812" bitwidth="8" opcode="getelementptr" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>X_I_3</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="X_I_3_load_2" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="bitcast_ln112_7" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="tmp_1_fu_598_p4" coreId="1952675186" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mux</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="tmp_1" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="mux_42_32_1_1_U4" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" bitwidth="32" opcode="mux" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="br_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1031369833" opcode="br" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>arrayidx7.1.i31.case.3</controlInputObjs>
+        <controlInputObjs>arrayidx7.1.i31.case.1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="120" name="arrayidx7.1.i31.case.3" type="BlockType">
+      <controlInputObjs>for.inc.i33.i.split.1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.1.i31.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="Stage0_R_3_addr_write_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="Stage0_I_3_addr" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1445951598" bitwidth="8" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>Stage0_I_3</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="Stage0_I_3_addr_write_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="br_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1936028192" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <controlInputObjs>arrayidx7.1.i31.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="124" name="arrayidx7.1.i31.case.1" type="BlockType">
+      <controlInputObjs>for.inc.i33.i.split.1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>arrayidx7.1.i31.exit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="Stage0_R_1_addr_write_ln111" lineNumber="111" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="111" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="Stage0_I_1_addr_write_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="2.0" m_display="0" m_delay="3.25" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>mux</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="br_ln112" lineNumber="112" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1952917093" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="112" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <controlInputObjs>arrayidx7.1.i31.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="128" name="arrayidx7.1.i31.exit" type="BlockType">
+      <controlInputObjs>arrayidx7.1.i31.case.3</controlInputObjs>
+      <controlInputObjs>arrayidx7.1.i31.case.1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="add_ln107" lineNumber="107" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." rtlName="add_ln107_fu_484_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="11" opcode="add" m_display="0" m_delay="1.63" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="107" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="temp_write_ln107" lineNumber="107" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1702043749" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="107" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="br_ln107" lineNumber="107" fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" fileDirectory=".." coreId="1663052072" opcode="br" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp" linenumber="107" fileDirectory="C:\Users\ShaneWu\OneDrive\Desktop\Documents\NTU\HLS\labB"/>
+        <controlInputObjs>for.inc.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp">
+        <validLinenumbers>107</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="tmp_s_reg_742">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_2_addr_reg_651">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_4_reg_736">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_3_addr_reg_656">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_1_addr_2_reg_715">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_2_addr_2_reg_700">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="temp_reg_622">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_2_addr_2_reg_720">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_3_addr_reg_685">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_1_addr_reg_646">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_730">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_0_addr_2_reg_710">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_0_addr_reg_641">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_3_addr_2_reg_705">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_2_addr_reg_680">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln111_reg_666">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="lshr_ln_reg_661">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_629">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_3_addr_2_reg_725">
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_748">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_0_addr_2_reg_690">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_1_addr_reg_675">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="X_I_0_addr_reg_670">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln_reg_633">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="X_R_1_addr_2_reg_695">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_1_fu_598">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln111_2_fu_472">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_I_addr_gep_fu_306">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_1_addr_gep_fu_177">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_3_fu_507">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_2_addr_gep_fu_194">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_2_addr_2_gep_fu_276">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_3_addr_gep_fu_143">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_I_2_addr_gep_fu_319">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_R_2_addr_gep_fu_299">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_1_addr_gep_fu_109">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_fu_88">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln107_fu_484">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_7_fu_594">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_0_addr_2_gep_fu_228">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_2_fu_503">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_404">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_0_addr_gep_fu_160">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_6_fu_590">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_569">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln111_fu_458">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_1_fu_528">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_fu_524">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_5_fu_557">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_540">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln111_fu_454">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_0_addr_gep_fu_92">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_4_fu_582">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln_fu_412">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_0_addr_2_gep_fu_260">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_3_addr_2_gep_fu_284">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_511">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_I_1_addr_gep_fu_358">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_fu_495">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_2_fu_532">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln111_1_fu_422">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_3_fu_536">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln111_1_fu_611">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_6_fu_561">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_444">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_7_fu_565">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_R_addr_gep_fu_292">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln111_fu_432">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_4_fu_553">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_1_addr_2_gep_fu_268">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_I_3_addr_gep_fu_371">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_R_1_addr_gep_fu_344">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_1_addr_2_gep_fu_236">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln112_5_fu_586">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="Stage0_R_3_addr_gep_fu_351">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_I_3_addr_gep_fu_211">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_2_addr_2_gep_fu_244">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln111_1_fu_499">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln111_1_cast_fu_464">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_3_addr_2_gep_fu_252">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_R_2_addr_gep_fu_126">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln0_store_fu_396">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln107_store_fu_490">
+    <nodeIds>126</nodeIds>
+  </ioNodes>
+  <ioNodes realName="temp_2_load_fu_401">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="Stage0_I">
+    <nodeIds>80</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_I_1">
+    <nodeIds>122</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_I_2">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_I_3">
+    <nodeIds>118</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_R">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_R_1">
+    <nodeIds>121</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_R_2">
+    <nodeIds>74</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="Stage0_R_3">
+    <nodeIds>116</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_0">
+    <nodeIds>102</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_0" portID="1">
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_1">
+    <nodeIds>105</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_1" portID="1">
+    <nodeIds>63</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_2">
+    <nodeIds>108</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_2" portID="1">
+    <nodeIds>66</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_3">
+    <nodeIds>111</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_I_3" portID="1">
+    <nodeIds>69</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_0">
+    <nodeIds>86</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_0" portID="1">
+    <nodeIds>40</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_1">
+    <nodeIds>89</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_1" portID="1">
+    <nodeIds>43</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_2">
+    <nodeIds>92</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_2" portID="1">
+    <nodeIds>46</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_3">
+    <nodeIds>95</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="X_R_3" portID="1">
+    <nodeIds>49</nodeIds>
+  </memoryPorts>
+  <ioPorts name="Stage0_I(p0)">
+    <contents name="store">
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_I_1(p0)">
+    <contents name="store">
+      <nodeIds>122</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_I_2(p0)">
+    <contents name="store">
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_I_3(p0)">
+    <contents name="store">
+      <nodeIds>118</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_R(p0)">
+    <contents name="store">
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_R_1(p0)">
+    <contents name="store">
+      <nodeIds>121</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_R_2(p0)">
+    <contents name="store">
+      <nodeIds>74</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="Stage0_R_3(p0)">
+    <contents name="store">
+      <nodeIds>116</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_0(p0)">
+    <contents name="load">
+      <nodeIds>102</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_0(p1)">
+    <contents name="load">
+      <nodeIds>60</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_1(p0)">
+    <contents name="load">
+      <nodeIds>105</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_1(p1)">
+    <contents name="load">
+      <nodeIds>63</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_2(p0)">
+    <contents name="load">
+      <nodeIds>108</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_2(p1)">
+    <contents name="load">
+      <nodeIds>66</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_3(p0)">
+    <contents name="load">
+      <nodeIds>111</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_I_3(p1)">
+    <contents name="load">
+      <nodeIds>69</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_0(p0)">
+    <contents name="load">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_0(p1)">
+    <contents name="load">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_1(p0)">
+    <contents name="load">
+      <nodeIds>89</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_1(p1)">
+    <contents name="load">
+      <nodeIds>43</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_2(p0)">
+    <contents name="load">
+      <nodeIds>92</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_2(p1)">
+    <contents name="load">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_3(p0)">
+    <contents name="load">
+      <nodeIds>95</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="X_R_3(p1)">
+    <contents name="load">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="2" latency="2"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="2" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="2" latency="2"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="2" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="2" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="2" latency="2"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="2" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="2" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="2" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="2" latency="2"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="2" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="2" latency="2"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="2" latency="2"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="2" latency="2"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="2" latency="2"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="40" stage="1" latency="2"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="2"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="2"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="2"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="2"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="2"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="2"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="2"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="2"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="2"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fft_Pipeline_Reverse" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="515" mMaxLatency="515">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Reverse" mII="1" mDepth="3" mMinTripCount="512" mMaxTripCount="512" mMinLatency="513" mMaxLatency="513" mType="1">
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>73</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>82</basicBlocks>
+      <basicBlocks>115</basicBlocks>
+      <basicBlocks>120</basicBlocks>
+      <basicBlocks>124</basicBlocks>
+      <basicBlocks>128</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>130</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="../FFT/FFT/HLS/1_Subcomponents/fft_stage_first/fft_stage_first.cpp" line="7" pragmaType="unroll" parentfunction="fft_stage_first" factor="2" skip_exit_check="0"/>
+<pragma file="../FFT/FFT/HLS/1_Subcomponents/fft_stage_first/fft_stage_first.cpp" line="10" pragmaType="array_partition" parentfunction="fft_stage_first" dim="1" factor="4" mode="cyclic" dynamic="0" variable="OUT_R"/>
+<pragma file="../FFT/FFT/HLS/1_Subcomponents/fft_stage_first/fft_stage_first.cpp" line="11" pragmaType="array_partition" parentfunction="fft_stage_first" dim="1" factor="4" mode="cyclic" dynamic="0" variable="OUT_I"/>
+<pragma file="../FFT/FFT/HLS/1_Subcomponents/fft_stage_first/fft_stage_first.cpp" line="8" pragmaType="array_partition" parentfunction="fft_stage_first" dim="1" factor="4" mode="cyclic" dynamic="0" variable="X_I"/>
+<pragma file="../FFT/FFT/HLS/1_Subcomponents/fft_stage_first/fft_stage_first.cpp" line="9" pragmaType="array_partition" parentfunction="fft_stage_first" dim="1" factor="4" mode="cyclic" dynamic="0" variable="X_R"/>
+</pragmas>

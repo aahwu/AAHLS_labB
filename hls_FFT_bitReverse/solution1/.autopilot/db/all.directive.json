@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "bit_reverse",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_bitReverse\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "bit_reverse"
+              }]
+          }
+        },
+        {
+          "functionName": "bit_reverse",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/ShaneWu\/OneDrive\/Desktop\/Documents\/NTU\/HLS\/labB\/hls_FFT_bitReverse\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "bit_reverse"
+              }]
+          }
+        }
+      ]
+    }]}

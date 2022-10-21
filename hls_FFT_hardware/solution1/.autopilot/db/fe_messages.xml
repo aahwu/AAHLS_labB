@@ -1,0 +1,402 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fft" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fft" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage9_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage9_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage8_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage8_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage7_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage7_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage6_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage6_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage5_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage5_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage4_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage4_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage3_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage3_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage2_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage2_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage1_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage1_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage0_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=Stage0_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=OUT_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=OUT_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=X_I" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=cyclic factor=4 variable=X_R" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="bit_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="skip_exit_check factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_first" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_first" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_first" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stages" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:166:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stages" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stages" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I inter WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stages" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R inter WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_I intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=OUT_R intra WAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/ShaneWu/OneDrive/Desktop/Documents/NTU/HLS/labB/hls_FFT_hardware/solution1/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fft_stage_last" ARG_PragmaIsValid="1" ARG_PragmaOptions="skip_exit_check factor=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j' into 'ap_int_base&lt;1024, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi1024ELb0EEC2EDq1024_j" Caller="ap_int_base&lt;1024, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;1024, false&gt;::ap_int_base(int)' into 'ap_uint&lt;1024&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;1024, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;1024&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(int)' into 'ap_uint&lt;32&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;32&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:261:76" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)'">
+        <args Callee="ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)" Caller="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:334:67" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)' into 'ap_uint&lt;32&gt;::ap_uint(unsigned int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base(unsigned int)" Caller="ap_uint&lt;32&gt;::ap_uint(unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:106:25" msg_body="Inlining function 'ap_uint&lt;1024&gt;::ap_uint(int)' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_uint&lt;1024&gt;::ap_uint(int)" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:112:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:111:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:109:7" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:108:22" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:109:15" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1175:30" msg_body="Inlining function 'ap_bit_ref&lt;32, false&gt;::ap_bit_ref(ap_int_base&lt;32, false&gt;*, int)' into 'ap_int_base&lt;32, false&gt;::operator[](int)'">
+        <args Callee="ap_bit_ref&lt;32, false&gt;::ap_bit_ref(ap_int_base&lt;32, false&gt;*, int)" Caller="ap_int_base&lt;32, false&gt;::operator[](int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1094:12" msg_body="Inlining function 'ap_range_ref&lt;32, false&gt;::ap_range_ref(ap_int_base&lt;32, false&gt;*, int, int)' into 'ap_int_base&lt;32, false&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;32, false&gt;::ap_range_ref(ap_int_base&lt;32, false&gt;*, int, int)" Caller="ap_int_base&lt;32, false&gt;::range(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, true&gt;::ssdm_int(int)' into 'ap_int_base&lt;32, true&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;32, true&gt;::ssdm_int(int)" Caller="ap_int_base&lt;32, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;32, false&gt;::get() const' into 'ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;32, false&gt;::get() const" Caller="ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_int_base&lt;33, true&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" Caller="ap_int_base&lt;33, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1544:341" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1544:558" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1544:520" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1544:430" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:1152:1109" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:1152:1150" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:1152:1152" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function 'ssdm_int&lt;64, true&gt;::ssdm_int(long)' into 'ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ssdm_int&lt;64, true&gt;::ssdm_int(long)" Caller="ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function 'ssdm_int&lt;64, true&gt;::ssdm_int(long)' into 'ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ssdm_int&lt;64, true&gt;::ssdm_int(long)" Caller="ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;64, true&gt;::ssdm_int(long)' into 'ap_int_base&lt;64, true&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;64, true&gt;::ssdm_int(long)" Caller="ap_int_base&lt;64, true&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:339" msg_body="Inlining function 'ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:554" msg_body="Inlining function 'ap_int&lt;64&gt;::ap_int&lt;64, true&gt;(ap_int_base&lt;64, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int&lt;64&gt;::ap_int&lt;64, true&gt;(ap_int_base&lt;64, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:516" msg_body="Inlining function 'ap_int_base&lt;64, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;64, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:427" msg_body="Inlining function 'ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;64, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1679:216" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1679:254" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::mult operator*&lt;32, true, 32, false&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1834:1657" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1834:1695" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator==&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;) const' into 'bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator==&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;) const" Caller="bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:163:8" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:183:8" msg_body="Inlining function 'bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="bool operator==&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182:9" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:182:22" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181:9" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:181:22" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180:9" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:180:26" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179:9" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:179:26" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:177:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:176:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:175:15" msg_body="Inlining function 'ap_int_base&lt;64, true&gt;::operator long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;64, true&gt;::operator long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:175:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174:15" msg_body="Inlining function 'ap_int_base&lt;64, true&gt;::operator long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;64, true&gt;::operator long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:174:16" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::mult operator*&lt;32, false&gt;(int, ap_int_base&lt;32, false&gt; const&amp;)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:173:7" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:173:9" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, false&gt;::logic operator|&lt;32, false&gt;(int, ap_range_ref&lt;32, false&gt; const&amp;)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:173:17" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::range(int, int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::range(int, int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:172:22" msg_body="Inlining function 'ap_bit_ref&lt;32, false&gt;::operator=(int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_bit_ref&lt;32, false&gt;::operator=(int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:172:3" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator[](int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator[](int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:170:23" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:164:7" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'fft_stages(float*, float*, int, float*, float*)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="fft_stages(float*, float*, int, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:191:0" msg_body="Unrolling loop 'butterfly' (../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:205:12) in function 'fft_stage_last' partially (and skipping exit check) with a factor of 2">
+        <args Factor="2" LoopLoc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:205:12" LoopName="butterfly"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:119:0" msg_body="Unrolling loop 'DFTpts' (../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:134:9) in function 'fft_stage_first' partially with a factor of 2">
+        <args Factor="2" LoopLoc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:134:9" LoopName="DFTpts"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:101:0" msg_body="Unrolling loop 'Reverse' (../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:107:11) in function 'bit_reverse' partially (and skipping exit check) with a factor of 2">
+        <args Factor="2" LoopLoc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:107:11" LoopName="Reverse"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:101:0" msg_body="Inlining function 'reverse(unsigned int, unsigned int)' into 'bit_reverse(float*, float*, float*, float*)'">
+        <args Callee="reverse(unsigned int, unsigned int)" Caller="bit_reverse(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Inlining function 'bit_reverse(float*, float*, float*, float*)' into 'fft(float*, float*, float*, float*)'">
+        <args Callee="bit_reverse(float*, float*, float*, float*)" Caller="fft(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Inlining function 'fft_stage_first(float*, float*, float*, float*)' into 'fft(float*, float*, float*, float*)'">
+        <args Callee="fft_stage_first(float*, float*, float*, float*)" Caller="fft(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Inlining function 'fft_stage_last(float*, float*, float*, float*)' into 'fft(float*, float*, float*, float*)'">
+        <args Callee="fft_stage_last(float*, float*, float*, float*)" Caller="fft(float*, float*, float*, float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:47:8" msg_body="Applying array_partition to 'Stage0_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage0_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:47:24" msg_body="Applying array_partition to 'Stage0_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage0_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:52:8" msg_body="Applying array_partition to 'Stage1_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage1_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:52:24" msg_body="Applying array_partition to 'Stage1_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage1_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:54:8" msg_body="Applying array_partition to 'Stage2_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage2_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:54:24" msg_body="Applying array_partition to 'Stage2_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage2_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:55:8" msg_body="Applying array_partition to 'Stage3_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage3_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:55:24" msg_body="Applying array_partition to 'Stage3_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage3_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:56:8" msg_body="Applying array_partition to 'Stage4_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage4_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:56:24" msg_body="Applying array_partition to 'Stage4_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage4_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:57:8" msg_body="Applying array_partition to 'Stage5_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage5_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:57:24" msg_body="Applying array_partition to 'Stage5_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage5_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:58:8" msg_body="Applying array_partition to 'Stage6_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage6_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:58:24" msg_body="Applying array_partition to 'Stage6_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage6_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:59:8" msg_body="Applying array_partition to 'Stage7_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage7_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:59:24" msg_body="Applying array_partition to 'Stage7_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage7_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:60:8" msg_body="Applying array_partition to 'Stage8_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage8_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:60:24" msg_body="Applying array_partition to 'Stage8_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage8_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:61:8" msg_body="Applying array_partition to 'Stage9_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage9_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:61:24" msg_body="Applying array_partition to 'Stage9_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="Stage9_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Applying array_partition to 'X_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="X_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Applying array_partition to 'X_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="X_I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Applying array_partition to 'OUT_R': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="OUT_R"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../FFT/FFT/HLS/2_Skeleton_Restructured/fft.cpp:44:0" msg_body="Applying array_partition to 'OUT_I': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="OUT_I"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+
